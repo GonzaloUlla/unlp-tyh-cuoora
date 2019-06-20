@@ -1,12 +1,3 @@
----
-name: Pull request
-about: Open a PR to help us improve
-title: ''
-labels: ''
-assignees: ''
-
----
-
 ## Proposed Changes
 <!--- MANDATORY -->
 
