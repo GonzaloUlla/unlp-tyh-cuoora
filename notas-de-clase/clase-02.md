@@ -41,7 +41,7 @@ Hijo dni: 3030 nombre: 'Tiago'. "Mensaje de clase"
 ```
 ### Instance creation (mensaje de clase)
 ```smalltalk
-dni: unString nombre: otroStirng
+dni: unString nombre: otroString
     | nuevo |
     nuevo := self new.
     nuevo dni: unString.

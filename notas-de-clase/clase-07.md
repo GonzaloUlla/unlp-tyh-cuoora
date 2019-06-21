@@ -39,11 +39,3 @@ Con SeaSide no vamos a escribir JS, CSS ni HTML
 ![Seaside 3](img/Seaside-3.png)
 ![Seaside 4](img/Seaside-4.png)
 ![Seaside 5](img/Seaside-5.png)
-#### Trabajo Práctico y Unit Tests - TP & UT
-* Tests en un paquete separado
-* **DUDA:** ¿Hay que hacer el diagrama de clases de los UT?
-* **DUDA:** ¿Hay incluir validaciones?
-* No evalúan *CSS* ni nada de eso
-* Sí se evalúa la separación entre el Modelo y la Vista, **es lo más importante**
-
-![Seaside 2](img/Seaside-2.png)
