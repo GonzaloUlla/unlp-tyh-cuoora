@@ -116,8 +116,8 @@ initialize
 
 
 !Tópico methodsFor: 'accessing' stamp: 'Julieta 5/30/2019 00:14'!
-descripción: anObject
-	descripción := anObject! !
+nombre: anObject
+	nombre := anObject! !
 
 !Tópico methodsFor: 'accessing' stamp: 'Julieta 5/30/2019 00:14'!
 descripción
@@ -128,8 +128,8 @@ nombre
 	^ nombre! !
 
 !Tópico methodsFor: 'accessing' stamp: 'Julieta 5/30/2019 00:14'!
-nombre: anObject
-	nombre := anObject! !
+descripción: anObject
+	descripción := anObject! !
 
 
 Object subclass: #Usuario
@@ -150,23 +150,20 @@ contraseña: anObject
 nombre: anObject
 	nombre := anObject! !
 
-!Usuario methodsFor: 'accessing' stamp: 'GonzaloUlla 6/20/2019 21:22'!
+!Usuario methodsFor: 'accessing' stamp: 'GonzaloUlla 6/20/2019 21:38'!
 seguirA: unUsuario
-
-	sigueA add: unUsuario.! !
+	sigueA add: unUsuario! !
 
 !Usuario methodsFor: 'accessing' stamp: 'Julieta 5/30/2019 00:21'!
 fechaCreación
 	^ fechaCreación! !
 
-!Usuario methodsFor: 'accessing' stamp: 'Julieta 6/20/2019 15:18'!
+!Usuario methodsFor: 'accessing' stamp: 'GonzaloUlla 6/20/2019 21:38'!
 conocerPreguntas
-
-	|retorno|
-	retorno:= 'PREGUNTAS', String cr.
-	preguntas do:[:x | retorno:=retorno, x asString].
-	^retorno.
-	! !
+	| retorno |
+	retorno := 'PREGUNTAS' , String cr.
+	preguntas do: [ :x | retorno := retorno , x asString ].
+	^ retorno! !
 
 !Usuario methodsFor: 'accessing' stamp: 'Julieta 5/30/2019 00:13'!
 nombre
@@ -177,39 +174,35 @@ contraseña
 	^ contraseña! !
 
 
-!Usuario methodsFor: 'initialization' stamp: 'GonzaloUlla 6/20/2019 21:22'!
-initialize
+!Usuario methodsFor: 'api' stamp: 'GonzaloUlla 6/20/2019 21:38'!
+agregarTópicoInterés: unTópico
+	tópicosInterés add: unTópico! !
 
+!Usuario methodsFor: 'api' stamp: 'GonzaloUlla 6/20/2019 21:38'!
+agregarPregunta: unaPregunta
+	preguntas add: unaPregunta! !
+
+!Usuario methodsFor: 'api' stamp: 'GonzaloUlla 6/20/2019 21:38'!
+conocerRespuestas
+	| retorno |
+	retorno := 'RESPUESTAS' , String cr.
+	respuestas do: [ :x | retorno := retorno , x asString ].
+	^ retorno! !
+
+!Usuario methodsFor: 'api' stamp: 'GonzaloUlla 6/20/2019 21:38'!
+agregarRespuesta: unaRespuesta
+	respuestas add: unaRespuesta! !
+
+
+!Usuario methodsFor: 'initialization' stamp: 'GonzaloUlla 6/20/2019 21:38'!
+initialize
 	contraseña := nil.
 	nombre := ''.
-	fechaCreación  := nil.
+	fechaCreación := nil.
 	tópicosInterés := OrderedCollection new.
 	sigueA := OrderedCollection new.
 	preguntas := OrderedCollection new.
-	respuestas := OrderedCollection new.! !
-
-
-!Usuario methodsFor: 'as yet unclassified' stamp: 'Julieta 6/20/2019 15:25'!
-agregarTópicoInterés: unTópico
-
-	tópicosInterés add: unTópico.  ! !
-
-!Usuario methodsFor: 'as yet unclassified' stamp: 'Julieta 6/19/2019 22:18'!
-agregarPregunta: unaPregunta
-		preguntas add: unaPregunta
-! !
-
-!Usuario methodsFor: 'as yet unclassified' stamp: 'Julieta 6/20/2019 15:19'!
-conocerRespuestas
-
-	|retorno|
-	retorno:= 'RESPUESTAS', String cr.
-	respuestas do:[:x | retorno:=retorno, x asString].
-	^retorno.! !
-
-!Usuario methodsFor: 'as yet unclassified' stamp: 'Julieta 6/20/2019 15:23'!
-agregarRespuesta: unaRespuesta
-	respuestas add: unaRespuesta.! !
+	respuestas := OrderedCollection new! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
