@@ -133,7 +133,7 @@ nombre: anObject
 
 
 Object subclass: #Usuario
-	instanceVariableNames: 'nombre contraseña fechaCreación tópicosInterés seguirA preguntas respuestas'
+	instanceVariableNames: 'nombre contraseña fechaCreación tópicosInterés sigueA preguntas respuestas'
 	classVariableNames: ''
 	poolDictionaries: ''
 	category: 'CuOOra-TyH-TP-Model'!
@@ -142,11 +142,6 @@ Object subclass: #Usuario
 fechaCreación: anObject
 	fechaCreación := anObject! !
 
-!Usuario methodsFor: 'accessing' stamp: 'Julieta 6/20/2019 15:10'!
-seguirA: unUsuario
-
-	seguirA add: unUsuario.! !
-
 !Usuario methodsFor: 'accessing' stamp: 'Julieta 5/30/2019 00:13'!
 contraseña: anObject
 	contraseña := anObject! !
@@ -154,6 +149,11 @@ contraseña: anObject
 !Usuario methodsFor: 'accessing' stamp: 'Julieta 5/30/2019 00:13'!
 nombre: anObject
 	nombre := anObject! !
+
+!Usuario methodsFor: 'accessing' stamp: 'GonzaloUlla 6/20/2019 21:22'!
+seguirA: unUsuario
+
+	sigueA add: unUsuario.! !
 
 !Usuario methodsFor: 'accessing' stamp: 'Julieta 5/30/2019 00:21'!
 fechaCreación
@@ -177,14 +177,14 @@ contraseña
 	^ contraseña! !
 
 
-!Usuario methodsFor: 'initialization' stamp: 'Julieta 6/20/2019 15:10'!
+!Usuario methodsFor: 'initialization' stamp: 'GonzaloUlla 6/20/2019 21:22'!
 initialize
 
 	contraseña := nil.
 	nombre := ''.
 	fechaCreación  := nil.
 	tópicosInterés := OrderedCollection new.
-	seguirA := OrderedCollection new.
+	sigueA := OrderedCollection new.
 	preguntas := OrderedCollection new.
 	respuestas := OrderedCollection new.! !
 
