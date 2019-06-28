@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Entrada",
+	"category" : "CuOOra-TyH-TP-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"preguntaReferida"
+	],
+	"name" : "Respuesta",
+	"type" : "normal"
+}
