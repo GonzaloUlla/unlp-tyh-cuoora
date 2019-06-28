@@ -3,5 +3,5 @@ initialize
 
 	super initialize.
 
-	descripción := nil.
-	nombre := nil.
+	descripción := ''.
+	nombre := ''.

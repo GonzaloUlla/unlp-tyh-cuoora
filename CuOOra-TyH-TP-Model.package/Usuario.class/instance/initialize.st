@@ -1,8 +1,8 @@
 initialization
 initialize
-	contraseña := nil.
+	contraseña := ''.
 	nombre := ''.
-	fechaCreación := nil.
+	fechaCreación := ''.
 	tópicosInterés := OrderedCollection new.
 	sigueA := OrderedCollection new.
 	preguntas := OrderedCollection new.
