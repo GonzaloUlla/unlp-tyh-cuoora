@@ -1,7 +1,10 @@
 initialization
 initialize
-	contraseña := ''.
+	"Inicialización de un Usuario"
+
+	super initialize.
 	nombre := ''.
+	contraseña := ''.
 	fechaCreación := DateAndTime now.
 	tópicosInterés := OrderedCollection new.
 	sigueA := OrderedCollection new.
