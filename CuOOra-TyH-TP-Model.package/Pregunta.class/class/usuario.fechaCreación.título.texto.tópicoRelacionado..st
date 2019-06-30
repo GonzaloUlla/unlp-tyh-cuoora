@@ -9,5 +9,4 @@ usuario: unUsuario fechaCreación: unaFecha título: unTítulo texto: unTexto t�
 	nuevaPregunta título: unTítulo.
 	nuevaPregunta texto: unTexto.
 	nuevaPregunta agregarTópicoRelacionado: unTópico.	
-	unUsuario agregarPregunta: nuevaPregunta.
 	^ nuevaPregunta

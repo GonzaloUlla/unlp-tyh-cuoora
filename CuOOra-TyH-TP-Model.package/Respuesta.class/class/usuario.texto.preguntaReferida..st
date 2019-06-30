@@ -8,5 +8,4 @@ usuario: unUsuario texto: unTexto preguntaReferida: unaPregunta
 	nuevaRespuesta fechaCreación: DateAndTime now.
 	nuevaRespuesta texto: unTexto.
 	nuevaRespuesta preguntaReferida: unaPregunta.
-	unaPregunta agregarRespuesta: nuevaRespuesta.
 	^ nuevaRespuesta

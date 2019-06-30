@@ -8,7 +8,9 @@
 	"instvars" : [
 		"usuario",
 		"fechaCreación",
-		"texto"
+		"texto",
+		"votosPositivos",
+		"votosNegativos"
 	],
 	"name" : "Entrada",
 	"type" : "normal"

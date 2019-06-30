@@ -1,3 +1,0 @@
-api
-obtenerPreguntas
-	^ preguntas.

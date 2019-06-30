@@ -1,6 +1,5 @@
-accessing
+api
 conocerPreguntas
-	| retorno |
-	retorno := 'PREGUNTAS' , String cr.
-	preguntas do: [ :x | retorno := retorno , x asString ].
-	^ retorno
+	"Retorna las Preguntas del Usuario (una copia para no romper el encapsulamiento de la colección)"
+
+	^ preguntas copy
