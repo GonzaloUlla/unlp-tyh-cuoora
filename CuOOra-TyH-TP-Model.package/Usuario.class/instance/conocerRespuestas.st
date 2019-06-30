@@ -1,6 +1,5 @@
 api
 conocerRespuestas
-	| retorno |
-	retorno := 'RESPUESTAS' , String cr.
-	respuestas do: [ :x | retorno := retorno , x asString ].
-	^ retorno
+	"Retorna las Respuestas del Usuario (una copia para no romper el encapsulamiento de la colección)"
+
+	^ respuestas copy

@@ -1,3 +1,3 @@
 accessing
-preguntaReferida: anObject
-	preguntaReferida := anObject
+preguntaReferida: unaPregunta
+	preguntaReferida := unaPregunta
