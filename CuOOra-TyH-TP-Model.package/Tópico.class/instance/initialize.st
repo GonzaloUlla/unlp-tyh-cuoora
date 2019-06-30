@@ -5,3 +5,4 @@ initialize
 
 	descripción := ''.
 	nombre := ''.
+	preguntas := OrderedCollection new.

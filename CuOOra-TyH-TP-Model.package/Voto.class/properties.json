@@ -6,10 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"nombre",
-		"descripción",
-		"preguntas"
+		"usuario",
+		"esPositivo",
+		"fechaCreación"
 	],
-	"name" : "Tópico",
+	"name" : "Voto",
 	"type" : "normal"
 }

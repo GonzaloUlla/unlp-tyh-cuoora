@@ -1,0 +1,3 @@
+api
+obtenerPreguntas
+	^ preguntas.
