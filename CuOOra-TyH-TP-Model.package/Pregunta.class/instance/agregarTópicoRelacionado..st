@@ -1,3 +1,3 @@
 api
 agregarTópicoRelacionado: unTópico
-	tópicosRelacionados add: unTópico.
+	tópicosRelacionados add: unTópico
