@@ -6,10 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"nombre",
-		"descripción",
-		"preguntas"
+		"usuarios",
+		"tópicos"
 	],
-	"name" : "Tópico",
+	"name" : "CuOOra",
 	"type" : "normal"
 }
