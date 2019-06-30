@@ -1,0 +1,14 @@
+cuoora := CuOOra new.
+
+unUsuario := Usuario nombre: 'Gonzalito el más bonito' contraseña: 'teamojuli'.
+unUsuario.
+
+unTópico := Tópico nombre: 'unTópico' descripción: 'unaDescripción'.
+unTópico.
+
+cuoora agregarUsuario: unUsuario.
+cuoora agregarTópico: unTópico.
+
+unUsuario agregarTópicoInterés: unTópico.
+unaPregunta := Pregunta usuario: unUsuario título: 'unTítulo' texto: 'texto de la pregunta' tópicoRelacionado: unTópico.
+

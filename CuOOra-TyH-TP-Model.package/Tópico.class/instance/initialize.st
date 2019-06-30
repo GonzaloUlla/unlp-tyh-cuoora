@@ -1,8 +1,8 @@
 initialization
 initialize
+	"Inicialización de un Tópico"
 
 	super initialize.
-
-	descripción := ''.
 	nombre := ''.
-	preguntas := OrderedCollection new.
+	descripción := ''.
+	preguntas := OrderedCollection new
