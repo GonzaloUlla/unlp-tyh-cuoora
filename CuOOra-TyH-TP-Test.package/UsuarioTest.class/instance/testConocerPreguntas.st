@@ -1,4 +1,4 @@
-tests
+testing
 testConocerPreguntas
 	| pregunta1 tópico1 |
 	"initialization"

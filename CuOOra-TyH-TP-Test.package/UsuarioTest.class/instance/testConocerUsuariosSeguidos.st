@@ -1,4 +1,4 @@
-tests
+testing
 testConocerUsuariosSeguidos
 	| usuario1 usuario2 |
 	"initialization"

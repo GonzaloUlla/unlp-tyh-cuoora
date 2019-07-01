@@ -1,4 +1,4 @@
-tests
+testing
 testConocerRespuestas
 	| pregunta1 respuesta1 respuesta2 tópico1 otroUsuario |
 	"initialization"

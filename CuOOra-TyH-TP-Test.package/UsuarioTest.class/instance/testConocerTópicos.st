@@ -1,4 +1,4 @@
-tests
+testing
 testConocerTópicos
 	| tópico1 tópico2 |
 	tópico1 := Tópico nombre: 't1' descripción: 't1'.

@@ -1,4 +1,4 @@
-tests
+testing
 testConocerPreguntasRelevantes
 	| pregunta1 pregunta2 pregunta3 pregunta4 tópico1 tópico2 usuarioSeguido usuarioNoSeguido |
 	"initialization - tópicos"

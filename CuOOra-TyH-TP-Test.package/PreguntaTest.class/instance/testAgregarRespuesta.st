@@ -1,4 +1,4 @@
-tests
+testing
 testAgregarRespuesta
 	| usuario1 respuesta1 |
 	"Inicializo usuario1 y respuesta1"

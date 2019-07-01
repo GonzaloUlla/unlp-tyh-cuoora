@@ -1,4 +1,4 @@
-tests
+testing
 testConocerRespuestas
 	|respuesta1 respuesta2 usuario1 usuario2 voto1 voto2|
 	

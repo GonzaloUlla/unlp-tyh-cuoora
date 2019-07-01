@@ -1,4 +1,4 @@
-tests
+testing
 testAgregarTópicoRelacionado
 	| tópico2 |
 	"Iniciliazo tópico2"

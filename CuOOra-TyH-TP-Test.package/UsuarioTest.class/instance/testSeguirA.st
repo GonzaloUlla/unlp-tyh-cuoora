@@ -1,4 +1,4 @@
-tests
+testing
 testSeguirA
 	usuario seguirA: (Usuario nombre: 'u1' contraseña: 'u2').
 	self assert: usuario conocerUsuariosSeguidos size equals: 1.

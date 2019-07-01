@@ -1,4 +1,4 @@
-tests
+testing
 testInitialize
 	self deny: tópico nombre isNil.
 	self deny: tópico descripción isNil.

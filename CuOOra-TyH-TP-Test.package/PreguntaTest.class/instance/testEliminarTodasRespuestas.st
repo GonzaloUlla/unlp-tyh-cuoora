@@ -1,4 +1,4 @@
-tests
+testing
 testEliminarTodasRespuestas
 
 	|usuario1 respuesta1 respuesta2 voto1|

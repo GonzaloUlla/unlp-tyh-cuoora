@@ -1,4 +1,4 @@
-tests
+testing
 testConocerPreguntas
 	| pregunta1 usuario1 |
 	usuario1 := Usuario nombre: 'Julieta' contraseña: 'Julieta123'.

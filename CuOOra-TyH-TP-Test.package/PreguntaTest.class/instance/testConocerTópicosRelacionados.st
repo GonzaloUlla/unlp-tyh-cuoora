@@ -1,4 +1,4 @@
-tests
+testing
 testConocerTópicosRelacionados
 	|tópico1|
 	self deny: pregunta conocerTópicosRelacionados isEmpty.

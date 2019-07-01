@@ -2,4 +2,5 @@ initialization
 initialize
 	"Inicialización de una Respuesta"
 
-	super initialize
+	super initialize.
+	preguntaReferida := ''

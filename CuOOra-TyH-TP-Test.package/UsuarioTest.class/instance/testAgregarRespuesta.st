@@ -1,4 +1,4 @@
-tests
+testing
 testAgregarRespuesta
 	|usuario1 tópico1 pregunta1 respuesta1|
 	usuario1 := Usuario nombre: 'Gonzalo' contraseña: 'Gonzalo123'.
