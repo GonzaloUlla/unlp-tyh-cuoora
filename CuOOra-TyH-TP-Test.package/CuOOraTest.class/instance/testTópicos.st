@@ -1,4 +1,4 @@
-tests
+testing
 testTópicos
 	|tópico1|
 	tópico1 := Tópico nombre: 'Reptiles' descripción: 'Animales reptiles'. 

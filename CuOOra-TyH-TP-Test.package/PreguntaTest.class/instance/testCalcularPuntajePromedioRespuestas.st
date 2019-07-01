@@ -1,4 +1,4 @@
-tests
+testing
 testCalcularPuntajePromedioRespuestas
 	| respuesta1 respuesta2 respuesta3 usuario1 usuario2 usuario3 voto1 voto2 voto3 voto4 voto5 |
 
@@ -21,7 +21,7 @@ testCalcularPuntajePromedioRespuestas
 		texto: 'r3'
 		preguntaReferida: pregunta.
 		
-	"Agrego respuesta1, respuesta2 y repsuesta3 a pregunta"	
+	"Agrego respuesta1, respuesta2 y respuesta3 a pregunta"	
 	pregunta agregarRespuesta: respuesta1.
 	pregunta agregarRespuesta: respuesta2.
 	pregunta agregarRespuesta: respuesta3.
