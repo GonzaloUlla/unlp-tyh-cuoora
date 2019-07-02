@@ -1,0 +1,98 @@
+"Creamos el objeto cuoora"
+cuoora := CuOOra new.
+
+"1- Crear un nuevo usuario"
+usuario1 := Usuario nombre: 'Julieta' contraseña: 'Julieta123' fechaCreación: (DateAndTime now).
+usuario2 := Usuario nombre: 'Gonzalo' contraseña: 'Gonzalo123' fechaCreación: (DateAndTime now).
+
+cuoora agregarUsuario: usuario1.
+cuoora agregarUsuario: usuario2.
+
+"2- Agregar tópicos"
+tópico1 := Tópico nombre: 'Animales' descripción: 'Animales del mundo'.
+tópico2 := Tópico nombre: 'Colores' descripción: 'Colores de objetos, animales, elementos'.
+
+cuoora agregarTópico: tópico1.
+cuoora agregarTópico: tópico2.
+
+"3- Agregar preguntas"
+
+"pregunta1 por usuario1" 
+pregunta1 := Pregunta usuario: usuario1 fechaCreación: (DateAndTime now) título: 'Canguro' texto: '¿Cómo hace un canguro para mantener limpia su bolsa?' tópicoRelacionado: tópico1.
+
+usuario1 agregarPregunta: pregunta1.
+tópico1 agregarPregunta: pregunta1.
+
+"pregunta2 por usuario2" 
+pregunta2 := Pregunta usuario: usuario2 fechaCreación: (DateAndTime now) título: 'Color lagarto' texto: '¿De qué color es el lagarto?' tópicoRelacionado: tópico2. 
+
+usuario2 agregarPregunta: pregunta2.
+tópico2 agregarPregunta: pregunta2.
+
+"4- Agregar respuestas"
+
+"respuesta1 por usuario1 a pregunta2"
+respuesta1 := Respuesta usuario: usuario1 fechaCreación: (DateAndTime now) texto: 'Es de color verde' preguntaReferida: pregunta2.
+usuario1 agregarRespuesta: respuesta1.
+pregunta2 agregarRespuesta: respuesta1.
+
+"respuesta2 por usuario2 a pregunta1"
+respuesta2 := Respuesta usuario: usuario2 fechaCreación: (DateAndTime now) texto: 'Lame el interior de la bolsa' preguntaReferida: pregunta1.
+usuario2 agregarRespuesta: respuesta2.
+pregunta1 agregarRespuesta: respuesta2.
+
+"5- Agregar un usuario como follower de otro"
+"usuario1 como follower de usuario2"
+usuario1 seguirA: usuario2. 		
+	
+"6- Registrar Like a pregunta"
+"voto1 por usuario2 a pregunta1"
+voto1 := Voto usuario: usuario2 entrada: pregunta1 fechaCreación: (DateAndTime now).
+pregunta1 agregarVotoPositivo: voto1.
+
+"6- Registrar Dislike a respuesta"
+"voto2 por usuario1 a respuesta2" 
+voto2 := Voto usuario: usuario1 entrada: respuesta2 fechaCreación: (DateAndTime now).
+respuesta2 agregarVotoNegativo: voto2.
+
+"7- Registrar tópico de interés a usuario"
+usuario2 agregarTópicoInterés: tópico1. 
+
+"8- Obtener preguntas de un tópico"
+tópico1 conocerPreguntas.
+
+"9- Obtener preguntas relevantes"
+usuario1 conocerPreguntasRelevantes.
+usuario2 conocerPreguntasRelevantes.
+
+"10- Obtener respuestas a una pregunta ordenadas por cantidad de likes"
+pregunta1 conocerRespuestas.
+
+"10- Obtener respuestas a una pregunta ordenadas por cantidad de likes"
+"Agregamos otra respuesta para que pregunta1 tenga dos respuestas"
+"respuesta2 -1"
+"respuesta3 +1"
+respuesta3 := Respuesta usuario: usuario2 fechaCreación: (DateAndTime now) texto: 'Se para cabeza abajo y sacude la bolsa' preguntaReferida: pregunta1.
+usuario2 agregarRespuesta: respuesta3.
+pregunta1 agregarRespuesta: respuesta3.
+
+voto3 := Voto usuario: usuario1 entrada: respuesta3  fechaCreación: (DateAndTime now).
+respuesta3 agregarVotoPositivo: voto3.  
+
+pregunta1 conocerRespuestas.
+
+"11- Determinar si una respuesta está entre las mejores de una pregunta"
+"respuesta2 no está dentro de las mejores"
+respuesta2 dentroDeMejoresRespuestas. 
+"respuesta3 está dentro de las mejores"
+respuesta3 dentroDeMejoresRespuestas.
+
+"12- Borrar una pregunta"
+cuoora eliminarPregunta: pregunta1.
+
+"13- Conocer las preguntas que realizó un usuario"
+usuario1 conocerPreguntas.
+
+"14- Conocer las respuestas que realizó un usuario"
+usuario1 conocerRespuestas.
+usuario2 conocerRespuestas.
