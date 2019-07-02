@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "GonzaloUlla 7/1/2019 22:08",
+	"super" : "TestCase",
+	"category" : "CuOOra-TyH-TP-Test",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"entrada"
+	],
+	"name" : "EntradaTest",
+	"type" : "normal"
+}
