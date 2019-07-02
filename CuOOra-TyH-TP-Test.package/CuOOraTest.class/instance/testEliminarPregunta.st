@@ -37,6 +37,7 @@ testEliminarPregunta
 	"Eliminar pregunta"
 	cuoora eliminarPregunta: pregunta.
 	self deny: (respuesta conocerVotosPositivos includes: votoRespuesta).
+	self deny: (usuario conocerRespuestas includes: respuesta).
 	self deny: (pregunta conocerRespuestas includes: respuesta).
 	self deny: (pregunta conocerVotosNegativos includes: votoPregunta).
 	self deny: (usuario conocerPreguntas includes: pregunta).
