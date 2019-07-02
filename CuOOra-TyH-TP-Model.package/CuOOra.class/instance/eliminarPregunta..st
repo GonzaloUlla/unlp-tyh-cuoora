@@ -8,5 +8,5 @@ eliminarPregunta: unaPregunta
 
 	unaPregunta eliminarTodasRespuestas.
 	unaPregunta eliminarTodosVotos.
-	usuarios do: [ :usuario | usuario eliminarPregunta: unaPregunta ].
-	tópicos do: [ :tópico | tópico eliminarPregunta: unaPregunta ]
+	usuarios do: [ :usuario | (usuario conocerPreguntas includes: unaPregunta) ifTrue: [usuario eliminarPregunta: unaPregunta ]] .
+	tópicos do: [ :tópico | (tópico conocerPreguntas includes: unaPregunta ) ifTrue: [ tópico eliminarPregunta: unaPregunta ]]
