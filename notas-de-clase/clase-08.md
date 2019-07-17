@@ -32,8 +32,3 @@
   * rendering
   * testing
   * **instance creation:** constructor a nivel de clase
-
-```smalltalk
-
-
-```
