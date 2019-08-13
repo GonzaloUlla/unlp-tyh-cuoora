@@ -1,0 +1,3 @@
+controlling
+registroRechazado
+	yaRechazado := true
