@@ -5,7 +5,7 @@
 * *DUDA:* ¿Hay que hacer el diagrama de clases de los UT?
   * No, está bien separar en dos paquetes
 * *DUDA:* ¿Hay incluir validaciones?
-  * No
+  * No en el TP1, sí en el TP2
 * **DUDA:** ¿Pregunta-Tópico es bidireccional?
 * **DUDA:** ¿Un Usuario está compuesto por Entradas?
 * *DUDA:* ¿Cobertura?

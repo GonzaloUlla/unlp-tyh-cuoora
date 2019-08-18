@@ -9,19 +9,24 @@
 * Gonzalo Ulla (DNI: 39.079.547, gonzaulla@gmail.com)
 
 ## Tabla de Contenidos
-1. [Enunciado](https://github.com/GonzaloUlla/unlp-tyh-cuoora/blob/master/TP1%20-%20Enunciado.pdf)
-2. [Diagrama de Clases UML](#diagrama-de-clases-uml)
-3. [Paquetes st](#paquetes-st)
-4. [Notas de Clase](https://github.com/GonzaloUlla/unlp-tyh-cuoora/blob/master/notas-de-clase)
+1. [Enunciado TP1](https://github.com/GonzaloUlla/unlp-tyh-cuoora/blob/master/docs/TP1%20-%20Enunciado.pdf)
+2. [Enunciado TP2](https://github.com/GonzaloUlla/unlp-tyh-cuoora/blob/master/docs/TP2%20-%20Web.pdf)
+3. [Diagrama de Clases UML](#diagrama-de-clases-uml)
+4. [Paquetes st entregables](#paquetes-st-entregables)
+5. [Playgrounds](#playgrounds)
+6. [Notas de Clase](https://github.com/GonzaloUlla/unlp-tyh-cuoora/blob/master/docs/class-notes)
 
 
 ## Diagrama de Clases UML
-* [Diagrama de Clases UML en PNG](https://github.com/GonzaloUlla/unlp-tyh-cuoora/blob/master/diagrams/UNLP-TyH-TP1-CuOOra-Class-Diagram.png)
-* [Diagrama de Clases UML en PDF](https://github.com/GonzaloUlla/unlp-tyh-cuoora/blob/master/diagrams/UNLP-TyH-TP1-CuOOra-Class-Diagram.pdf)
+* [Diagrama de Clases UML en PNG](https://github.com/GonzaloUlla/unlp-tyh-cuoora/blob/master/docs/diagrams/UNLP-TyH-TP1-CuOOra-Class-Diagram.png)
+* [Diagrama de Clases UML en PDF](https://github.com/GonzaloUlla/unlp-tyh-cuoora/blob/master/docs/diagrams/UNLP-TyH-TP1-CuOOra-Class-Diagram.pdf)
 * [Diagrama de Clases UML en Google Drive - draw.io](https://drive.google.com/file/d/1ZxY7S2dx9snVGjNJxClkLEa_J22xiDb5/view?usp=sharing)
 
-![UNLP-TyH-TP1-CuOOra-Class-Diagram](diagrams/UNLP-TyH-TP1-CuOOra-Class-Diagram.png)
+![UNLP-TyH-TP1-CuOOra-Class-Diagram](docs/diagrams/UNLP-TyH-TP1-CuOOra-Class-Diagram.png)
 
-## Paquetes st
+## Paquetes st entregables
 * [CuOOra-TyH-TP-Model.st](https://github.com/GonzaloUlla/unlp-tyh-cuoora/blob/master/packages/CuOOra-TyH-TP-Model.st)
 * [CuOOra-TyH-TP-Test.st](https://github.com/GonzaloUlla/unlp-tyh-cuoora/blob/master/packages/CuOOra-TyH-TP-Test.st)
+
+## Playgrounds
+* [Playground TP1](https://github.com/GonzaloUlla/unlp-tyh-cuoora/blob/master/playgrounds/playground-tp1.txt)
