@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"view",
-		"agregarUsuarioView"
+		"agregarUsuarioView",
+		"cuooraViews"
 	],
 	"name" : "CuOOraView",
 	"type" : "normal"

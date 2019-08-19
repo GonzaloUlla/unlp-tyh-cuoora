@@ -7,8 +7,8 @@ renderTopHeaderOn: html
 				with: [ html div
 						class: 'register-info';
 						with: [ html
-										listItem: [ html anchor
-												callback: [ self showViewCalled: '#Juli' ];
-												with: 'Registrar' ];
-										clearfix] ].
-					 html clearfix] 
+								listItem: [ html anchor
+										callback: [ self showViewCalled: '#AgregarUsuario' ];
+										with: 'Registrar' ];
+								clearfix ] ].
+			html clearfix ]

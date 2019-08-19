@@ -1,3 +1,4 @@
 accessing
-view: anObject
-	view := anObject
+view: aView
+	view := aView.
+	^ (self call: view)
