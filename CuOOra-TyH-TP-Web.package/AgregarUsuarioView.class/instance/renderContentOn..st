@@ -1,6 +1,6 @@
 rendering
 renderContentOn: html
-	html heading with: 'Hola mundo'.
+	self renderHeaderOn: html.
 	html tbsButton
 		beDefault;
 		with: [ html anchor
