@@ -1,3 +1,3 @@
 rendering
 renderBodyOn: html
-	html render: self view.
+	preguntaViews do: [ :eachPreguntaView | html render: eachPreguntaView ]
