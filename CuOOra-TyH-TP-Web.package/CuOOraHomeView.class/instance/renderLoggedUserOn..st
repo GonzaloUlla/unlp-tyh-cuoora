@@ -6,7 +6,7 @@ renderLoggedUserOn: html
 				with: [ html text: 'Sin identificar'.
 					html space.
 					html anchor
-						callback: [ self showViewCalled: '#AgregarUsuario' ];
+						callback: [ usuario := self showViewCalled: '#AgregarUsuario' ];
 						with: 'Iniciar sesión' ] ]
 		ifNotNil: [ html div
 				class: 'pull-right';
