@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "Julieta 8/12/2019 09:29",
+	"commentStamp" : "GonzaloUlla 8/19/2019 14:24",
 	"super" : "WAComponent",
 	"category" : "CuOOra-TyH-TP-Web",
 	"classinstvars" : [ ],
@@ -8,7 +8,9 @@
 	"instvars" : [
 		"view",
 		"agregarUsuarioView",
-		"cuooraViews"
+		"cuooraViews",
+		"cuooraSingleton",
+		"usuario"
 	],
 	"name" : "CuOOraHomeView",
 	"type" : "normal"
