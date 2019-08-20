@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "GonzaloUlla 8/19/2019 14:24",
+	"super" : "WAComponent",
+	"category" : "CuOOra-TyH-TP-Web",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"view",
+		"agregarUsuarioView",
+		"cuooraViews",
+		"cuooraSingleton",
+		"usuario",
+		"preguntaViews"
+	],
+	"name" : "CuOOraHomeView",
+	"type" : "normal"
+}

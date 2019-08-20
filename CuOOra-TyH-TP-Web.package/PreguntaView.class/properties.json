@@ -1,15 +1,13 @@
 {
-	"commentStamp" : "Julieta 8/12/2019 09:29",
+	"commentStamp" : "<historical>",
 	"super" : "WAComponent",
 	"category" : "CuOOra-TyH-TP-Web",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"view",
-		"agregarUsuarioView",
-		"cuooraViews"
+		"pregunta"
 	],
-	"name" : "CuOOraView",
+	"name" : "PreguntaView",
 	"type" : "normal"
 }

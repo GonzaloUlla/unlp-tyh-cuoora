@@ -1,3 +1,3 @@
 accessing
 yaRechazado
-	^yaRechazado.
+	^ yaRechazado
