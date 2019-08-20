@@ -6,8 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"usuario",
-		"yaRechazado"
+		"cuooraSingleton",
+		"usuarioLogin",
+		"errorLogin"
 	],
 	"name" : "AgregarUsuarioView",
 	"type" : "normal"
