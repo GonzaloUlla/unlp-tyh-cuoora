@@ -15,8 +15,9 @@
 ## Seaside
 ### Repaso de la clase pasada
 * De nuevo, el énfasis está en separar vista de modelo
-### Cómo devolver el control
-![Seaside B1](img/Seaside-B-1.png)
+### Cómo pasar y devolver el control/responsabilidad de la navegación
+![Seaside B1](img/Seaside-B-1.PNG)
+* Otra variante de esto es mandar el mensaje `show`
 ### Hello-World
 * `Seaside-Hello-World` package
 
@@ -27,7 +28,7 @@
   * Web
 * Lista de protocolos
   * accessing
-  * initialzie
+  * initialize
   * callbacks
   * rendering
   * testing

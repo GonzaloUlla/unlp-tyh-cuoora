@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "WAComponent",
+	"category" : "CuOOra-TyH-TP-Web",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"usuario",
+		"yaRechazado"
+	],
+	"name" : "AgregarUsuarioView",
+	"type" : "normal"
+}
