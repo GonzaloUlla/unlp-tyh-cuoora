@@ -1,16 +1,17 @@
 rendering-header
 renderLoggedUserOn: html
-	usuario
+	loggedUser
 		ifNil: [ html div
 				class: 'pull-right';
 				with: [ html text: 'Sin identificar'.
 					html space.
 					html anchor
-						callback: [ usuario := self showViewCalled: '#AgregarUsuario' ];
+						callback: [ loggedUser := self call: agregarUsuarioView.
+							self initializePreguntaViews ];
 						with: 'Iniciar sesión' ] ]
 		ifNotNil: [ html div
 				class: 'pull-right';
 				with: [ html anchor
-						callback: [ self showViewCalled: '#PerfilUsuario' ];
-						"TODO"
-							with: usuario nombre ] ]
+						callback: [ "self call: perfilUsuarioView" ];
+						"TODO: #PerfilUsuario"
+							with: loggedUser nombre ] ]

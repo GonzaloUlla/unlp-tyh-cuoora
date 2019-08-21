@@ -1,5 +1,5 @@
 initialization
 initialize
 	super initialize.
-	usuario := Usuario new.
-	yaRechazado := false
+	usuarioLogin := Usuario new.
+	errorLogin := false

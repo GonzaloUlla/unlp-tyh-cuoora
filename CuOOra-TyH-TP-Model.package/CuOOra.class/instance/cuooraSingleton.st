@@ -28,7 +28,7 @@ cuooraSingleton
 			"3- Crear y agregar preguntas"
 			pregunta1 := Pregunta
 				usuario: usuario1
-				fechaCreación: DateAndTime now
+				fechaCreación: (DateAndTime year: 2019 month: 8 day: 19)
 				título: 'Método setUp'
 				texto: '¿Para qué sirve el método setUp en un Test Case?'
 				tópicoRelacionado: tópico1.
@@ -37,7 +37,7 @@ cuooraSingleton
 			tópico1 agregarPregunta: pregunta1.
 			pregunta2 := Pregunta
 				usuario: usuario2
-				fechaCreación: DateAndTime now
+				fechaCreación: (DateAndTime year: 2019 month: 7 day: 29)
 				título: '#messageNotUnderstood'
 				texto: '¿Qué significa #messageNotUnderstood?'
 				tópicoRelacionado: tópico1.

@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"pregunta"
+		"pregunta",
+		"loggedUser"
 	],
 	"name" : "PreguntaView",
 	"type" : "normal"
