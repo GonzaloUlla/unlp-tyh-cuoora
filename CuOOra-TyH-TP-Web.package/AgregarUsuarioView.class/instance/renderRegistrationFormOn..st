@@ -19,4 +19,8 @@ renderRegistrationFormOn: html
 						placeholder: 'Ingresar contraseña' ].
 			html tbsSubmitButton
 				callback: [ self validateLoginUsuario: usuarioLogin ];
-				with: 'Iniciar sesión' ]
+				with: 'Iniciar sesión'.
+			html space.
+			html tbsSubmitButton
+				callback: [ self answer: nil ];
+				with: 'Cancelar' ]
