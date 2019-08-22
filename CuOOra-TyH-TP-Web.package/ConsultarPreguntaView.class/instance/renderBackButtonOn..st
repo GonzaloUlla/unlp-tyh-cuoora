@@ -1,8 +1,7 @@
 rendering
 renderBackButtonOn: html
-	html tbsButton
-		beDefault;
-		with: [ html anchor
+	html
+		tbsForm: [ html tbsSubmitButton
 				callback: [ self answer ];
 				with: [ html tbsGlyphIcon iconArrowLeft.
-					html text: 'Volver' ] ]
+					html text: ' Volver' ] ]

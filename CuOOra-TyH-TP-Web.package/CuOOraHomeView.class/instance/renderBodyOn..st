@@ -7,4 +7,9 @@ renderBodyOn: html
 							html text: 'Hacer una nueva pregunta' ] ] ].
 	html space.
 	preguntaViews
-		ifNotNil: [ preguntaViews do: [ :eachPreguntaView | html render: eachPreguntaView ] ]
+		ifNotNil: [ preguntaViews
+				do: [ :eachPreguntaView | 
+					html break.
+					html render: eachPreguntaView.
+					self renderConsultarPreguntaButtonOn: html preguntaView: eachPreguntaView.
+					html break ] ]
