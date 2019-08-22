@@ -6,10 +6,11 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"cuooraSingleton",
-		"usuarioLogin",
-		"errorLogin"
+		"perfilUsuario",
+		"usuarioPerfil",
+		"loggedUser",
+		"preguntaViews"
 	],
-	"name" : "AgregarUsuarioView",
+	"name" : "PerfilUsuarioView",
 	"type" : "normal"
 }

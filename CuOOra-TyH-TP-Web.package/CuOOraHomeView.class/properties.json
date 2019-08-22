@@ -6,12 +6,11 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"view",
-		"agregarUsuarioView",
-		"cuooraViews",
 		"cuooraSingleton",
-		"usuario",
-		"preguntaViews"
+		"loggedUser",
+		"agregarUsuarioView",
+		"preguntaViews",
+		"perfilUsuarioView"
 	],
 	"name" : "CuOOraHomeView",
 	"type" : "normal"

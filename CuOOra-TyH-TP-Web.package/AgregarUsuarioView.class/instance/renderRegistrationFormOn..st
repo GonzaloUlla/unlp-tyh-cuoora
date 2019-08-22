@@ -6,7 +6,7 @@ renderRegistrationFormOn: html
 						for: 'inputUser';
 						with: 'Usuario'.
 					html textInput tbsFormControl
-						callback: [ :user | usuario nombre: user ];
+						callback: [ :user | usuarioLogin nombre: user ];
 						id: 'inputUser';
 						placeholder: 'Ingresar email' ].
 			html
@@ -14,9 +14,9 @@ renderRegistrationFormOn: html
 						for: 'inputPassword';
 						with: 'Contraseña'.
 					html passwordInput tbsFormControl
-						callback: [ :password | usuario contraseña: password ];
+						callback: [ :password | usuarioLogin contraseña: password ];
 						id: 'inputPassword';
 						placeholder: 'Ingresar contraseña' ].
 			html tbsSubmitButton
-				callback: [ self answer: usuario ];
+				callback: [ self validateLoginUsuario: usuarioLogin ];
 				with: 'Iniciar sesión' ]

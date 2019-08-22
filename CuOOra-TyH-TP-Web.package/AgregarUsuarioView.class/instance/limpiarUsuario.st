@@ -1,5 +1,4 @@
-initialization
+controlling
 limpiarUsuario
-	usuario := Usuario blank.
-	yaRechazado := false.
-	
+	usuarioLogin := Usuario new.
+	errorLogin := false
