@@ -1,4 +1,4 @@
-rendering
+rendering-header
 renderTopHeaderOn: html
 	html
 		tbsBreadcrumb: [ html

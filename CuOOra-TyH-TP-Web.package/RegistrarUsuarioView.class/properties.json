@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "AgregarUsuarioView",
+	"category" : "CuOOra-TyH-TP-Web",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"cuooraInstance"
+	],
+	"name" : "RegistrarUsuarioView",
+	"type" : "normal"
+}
