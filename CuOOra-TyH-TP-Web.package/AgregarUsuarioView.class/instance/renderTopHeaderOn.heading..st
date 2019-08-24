@@ -1,5 +1,5 @@
 rendering-header
-renderTopHeaderOn: html
+renderTopHeaderOn: html heading: aHeadingString
 	html
 		tbsBreadcrumb: [ html
 				tbsBreadcrumbSection: [ html anchor
@@ -7,4 +7,4 @@ renderTopHeaderOn: html
 						with: [ html text: 'Home' ] ].
 			html tbsBreadcrumbSection
 				beActive;
-				with: 'Iniciar sesión' ]
+				with: aHeadingString ]
