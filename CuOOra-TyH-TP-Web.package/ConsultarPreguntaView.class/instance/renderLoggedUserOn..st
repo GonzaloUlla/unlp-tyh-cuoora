@@ -6,4 +6,9 @@ renderLoggedUserOn: html
 				with: [ html anchor
 						callback: [ "self call: perfilUsuarioView" ];
 						"TODO: #PerfilUsuario"
-							with: loggedUser nombre ] ]
+							with: loggedUser nombre.
+					html space: 5.
+					html anchor
+						callback: [ loggedUser := nil.
+							self answer: loggedUser ];
+						with: 'Cerrar sesión' ] ]
