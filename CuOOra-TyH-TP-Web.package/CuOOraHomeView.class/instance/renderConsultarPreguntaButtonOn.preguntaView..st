@@ -2,6 +2,7 @@ rendering
 renderConsultarPreguntaButtonOn: html preguntaView: unaPreguntaView
 	html
 		tbsForm: [ html tbsSubmitButton
-				callback: [ self call: (ConsultarPreguntaView preguntaView: unaPreguntaView loggedUser: loggedUser) ];
+				callback: [ loggedUser := self call: (ConsultarPreguntaView preguntaView: unaPreguntaView loggedUser: loggedUser).
+					self initializePreguntaViews ];
 				with: [ html tbsGlyphIcon iconArrowRight.
 					html text: ' Ver respuestas' ] ]
