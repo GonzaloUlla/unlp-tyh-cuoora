@@ -5,6 +5,6 @@ renderHeaderOn: html
 		with: [ self renderTopHeaderOn: html ].
 	html
 		tbsPageHeader: [ html
-				heading: [ html text: 'Iniciar sesión'.
+				heading: [ html text: 'Nueva pregunta'.
 					html space.
-					html small: 'Ingrese usuario y contraseña' ] ]
+					html small: 'Ingrese título, desarrollo y tópicos de la pregunta a agregar' ] ]

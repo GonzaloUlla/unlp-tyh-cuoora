@@ -1,10 +1,6 @@
 rendering
 renderBodyOn: html
-	loggedUser
-		ifNotNil: [ html div
-				with: [ html tbsButton
-						with: [ html tbsButtonLabel: [ html tbsGlyphIcon iconPlus ].
-							html text: 'Hacer una nueva pregunta' ] ] ].
+	loggedUser ifNotNil: [ html div with: [ self renderAgregarPreguntaButtonOn: html ] ].
 	html space.
 	preguntaViews
 		ifNotNil: [ preguntaViews

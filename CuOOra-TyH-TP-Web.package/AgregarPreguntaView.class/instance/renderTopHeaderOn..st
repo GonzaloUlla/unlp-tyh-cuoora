@@ -3,8 +3,9 @@ renderTopHeaderOn: html
 	html
 		tbsBreadcrumb: [ html
 				tbsBreadcrumbSection: [ html anchor
-						callback: [ self answer: nil ];
+						callback: [ self answer ];
 						with: [ html text: 'Home' ] ].
 			html tbsBreadcrumbSection
 				beActive;
-				with: 'Iniciar sesión' ]
+				with: 'Agregar pregunta'.
+			self renderLoggedUserOn: html ]
