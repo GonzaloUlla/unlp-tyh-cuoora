@@ -17,9 +17,7 @@ renderRegistrationFormOn: html
 						callback: [ :password | usuarioLogin contraseña: password ];
 						id: 'inputPassword';
 						placeholder: 'Ingresar contraseña' ].
-			html tbsSubmitButton
-				callback: [ self validateLoginUsuario: usuarioLogin ];
-				with: 'Iniciar sesión'.
+			self renderSubmitButtonOn: html.
 			html space.
 			html tbsSubmitButton
 				callback: [ self answer: nil ];
