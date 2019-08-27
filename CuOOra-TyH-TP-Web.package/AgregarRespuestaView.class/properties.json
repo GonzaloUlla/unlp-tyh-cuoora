@@ -6,10 +6,13 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"cuooraSingleton",
 		"preguntaView",
-		"loggedUser"
+		"cuooraSingleton",
+		"loggedUser",
+		"respuesta",
+		"error",
+		"success"
 	],
-	"name" : "ConsultarPreguntaView",
+	"name" : "AgregarRespuestaView",
 	"type" : "normal"
 }
