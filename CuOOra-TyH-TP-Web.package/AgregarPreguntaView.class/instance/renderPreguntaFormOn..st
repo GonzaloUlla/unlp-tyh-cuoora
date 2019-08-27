@@ -30,5 +30,5 @@ renderPreguntaFormOn: html
 				with: 'Guardar'.
 			html space.
 			html tbsSubmitButton
-				callback: [ self answer ];
+				callback: [ self answer: loggedUser ];
 				with: 'Cancelar' ]
