@@ -6,10 +6,7 @@ renderContentOn: html
 				tbsPanelBody: [ html paragraph: pregunta texto.
 					html text: 'Tópicos:'.
 					html space.
-					pregunta conocerTópicosRelacionados
-						do: [ :eachTopic | 
-							html text: eachTopic nombre.
-							html space ].
+					pregunta conocerTópicosRelacionados do: [ :eachTopic | html text: eachTopic nombre , ', ' ].
 					html break.
 					html text: 'Realizada por: '.
 					html anchor

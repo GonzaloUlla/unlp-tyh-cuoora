@@ -4,7 +4,7 @@ renderLoggedUserOn: html
 		ifNil: [ html div
 				class: 'pull-right';
 				with: [ html text: 'Sin identificar'.
-					html space.
+					html space: 5.
 					html anchor
 						callback: [ loggedUser := self call: agregarUsuarioView.
 							self initializePreguntaViews ];
@@ -14,5 +14,8 @@ renderLoggedUserOn: html
 				with: [ html anchor
 						callback: [ self call: (PerfilUsuarioView usuarioPerfil: loggedUser loggedUser: loggedUser) ];
 						with: loggedUser nombre.
-					html space.
-					html anchor with: 'Cerrar sesión' ] ]
+					html space: 5.
+					html anchor
+						callback: [ loggedUser := nil.
+							self initializePreguntaViews ];
+						with: 'Cerrar sesión' ] ]
