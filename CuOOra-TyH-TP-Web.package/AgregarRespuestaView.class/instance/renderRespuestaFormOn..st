@@ -15,4 +15,4 @@ renderRespuestaFormOn: html
 			html space.
 			html tbsSubmitButton
 				callback: [ self answer: loggedUser ];
-				with: 'Cancelar' ]
+				with: 'Volver' ]
