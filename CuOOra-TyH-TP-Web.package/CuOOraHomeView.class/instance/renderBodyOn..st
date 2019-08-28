@@ -8,4 +8,5 @@ renderBodyOn: html
 					html break.
 					html render: eachPreguntaView.
 					self renderConsultarPreguntaButtonOn: html preguntaView: eachPreguntaView.
+					self renderPerfilUsuarioButtonOn: html usuarioPerfil: eachPreguntaView pregunta usuario.
 					html break ] ]

@@ -1,4 +1,4 @@
-rendering
+rendering-header
 renderHeaderOn: html
 	html div
 		class: #header;
