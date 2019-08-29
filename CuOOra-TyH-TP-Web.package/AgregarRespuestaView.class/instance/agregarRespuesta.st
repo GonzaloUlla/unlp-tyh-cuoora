@@ -1,7 +1,9 @@
 controlling
 agregarRespuesta
 	self validateAgregarRespuesta
-		ifTrue: [ respuesta preguntaReferida: preguntaView pregunta.
+		ifTrue: [ respuesta usuario: loggedUser.
+			respuesta preguntaReferida: preguntaView pregunta.
 			cuooraSingleton agregarRespuesta: respuesta.
 			success := true ]
-		ifFalse: [ success := false ]
+		ifFalse: [ success := false ].
+	self resetRespuesta
