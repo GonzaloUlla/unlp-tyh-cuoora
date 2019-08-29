@@ -24,7 +24,8 @@ renderPreguntaFormOn: html
 					html textInput tbsFormControl
 						callback: [ :topics | self addTopics: topics ];
 						id: 'inputTópicos';
-						placeholder: 'Ingrese los tópicos de su pregunta separados por coma: tópico1,tópico2,otro tópico 3,tópico4' ].
+						placeholder:
+							'Ingrese los tópicos de su pregunta separados por coma: tópico1,tópico2,otro tópico 3,tópico4' ].
 			html tbsSubmitButton
 				callback: [ self agregarPregunta ];
 				with: 'Guardar'.

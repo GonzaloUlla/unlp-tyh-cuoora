@@ -4,5 +4,7 @@ parseAndGet: stringOfTopics
 
 	| topics |
 	topics := OrderedCollection new.
-	stringOfTopics splitOn: ',' do: [ :topic | topics add: (cuooraSingleton getOrCreateTópico: topic) ].
+	stringOfTopics
+		splitOn: ','
+		do: [ :topic | topics add: (cuooraSingleton getOrCreateTópico: topics) ].
 	^ topics

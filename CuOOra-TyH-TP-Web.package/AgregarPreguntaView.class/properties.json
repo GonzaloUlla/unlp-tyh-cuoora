@@ -10,7 +10,8 @@
 		"loggedUser",
 		"pregunta",
 		"error",
-		"success"
+		"success",
+		"topicos"
 	],
 	"name" : "AgregarPreguntaView",
 	"type" : "normal"

@@ -8,10 +8,7 @@ renderContentOn: html
 					html space.
 					pregunta conocerTópicosRelacionados do: [ :eachTopic | html text: eachTopic nombre , ', ' ].
 					html break.
-					html text: 'Realizada por: '.
-					html anchor
-						callback: [ self call: (PerfilUsuarioView usuarioPerfil: pregunta usuario loggedUser: loggedUser) ];
-						with: pregunta usuario nombre.
+					html text: 'Realizada por: ', pregunta usuario nombre.
 					html text: ' | Fecha: '.
 					html text: pregunta fechaCreación asStringYMDHM.
 					html break.
