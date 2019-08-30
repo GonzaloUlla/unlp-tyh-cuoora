@@ -8,8 +8,10 @@ renderHeaderOn: html
 				heading: [ html text: 'Preguntas de '.
 					html text: usuarioPerfil nombre.
 					html space.
-					(usuarioPerfil = loggedUser)
-					ifFalse: [ html small: [html anchor
-						callback: [ loggedUser seguirA: usuarioPerfil. ];
-						with: 'Seguir' ] ]
-					 ] ]
+					usuarioPerfil = loggedUser
+						ifFalse: [ (loggedUser esSeguidorDe: usuarioPerfil)
+								ifTrue: [ html small: [ html text: 'Siguiendo' ] ]
+								ifFalse: [ html
+										small: [ html anchor
+												callback: [ loggedUser seguirA: usuarioPerfil ];
+												with: 'Seguir' ] ] ] ] ]
