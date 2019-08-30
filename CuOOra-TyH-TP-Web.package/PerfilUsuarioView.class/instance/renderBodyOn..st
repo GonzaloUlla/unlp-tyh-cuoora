@@ -6,4 +6,5 @@ renderBodyOn: html
 				ifNotNil: [ preguntaViews
 						do: [ :eachPreguntaView | 
 							html render: eachPreguntaView.
-							self renderConsultarPreguntaButtonOn: html preguntaView: eachPreguntaView ] ] ]
+							self renderConsultarPreguntaButtonOn: html preguntaView: eachPreguntaView.
+							html break ] ] ]
