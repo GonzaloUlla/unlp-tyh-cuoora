@@ -1,14 +1,23 @@
 # CuOOra
+
 * CuOOra: red social de preguntas y respuestas.
 * Trabajo final de Técnicas y Herramientas 2019
 * Maestría en Ingeniería de Software
 * Universidad Nacional de La Plata (UNLP)
 
+## Información del Grupo
+
 ### Autores
+
 * Julieta Ríos (DNI: 39.448.440, julirios299@gmail.com)
 * Gonzalo Ulla (DNI: 39.079.547, gonzaulla@gmail.com)
 
+### URL de la aplicación
+
+* http://localhost:8080/CuOOra
+
 ## Tabla de Contenidos
+
 1. [Enunciado TP1](https://github.com/GonzaloUlla/unlp-tyh-cuoora/blob/master/docs/TP1%20-%20Enunciado.pdf)
 2. [Enunciado TP2](https://github.com/GonzaloUlla/unlp-tyh-cuoora/blob/master/docs/TP2%20-%20Web.pdf)
 3. [Diagrama de Clases UML](#diagrama-de-clases-uml)
@@ -18,6 +27,7 @@
 
 
 ## Diagrama de Clases UML
+
 * [Diagrama de Clases UML en PNG](https://github.com/GonzaloUlla/unlp-tyh-cuoora/blob/master/docs/diagrams/UNLP-TyH-TP1-CuOOra-Class-Diagram.png)
 * [Diagrama de Clases UML en PDF](https://github.com/GonzaloUlla/unlp-tyh-cuoora/blob/master/docs/diagrams/UNLP-TyH-TP1-CuOOra-Class-Diagram.pdf)
 * [Diagrama de Clases UML en Google Drive - draw.io](https://drive.google.com/file/d/1ZxY7S2dx9snVGjNJxClkLEa_J22xiDb5/view?usp=sharing)
@@ -25,8 +35,10 @@
 ![UNLP-TyH-TP1-CuOOra-Class-Diagram](docs/diagrams/UNLP-TyH-TP1-CuOOra-Class-Diagram.png)
 
 ## Paquetes st entregables
+
 * [CuOOra-TyH-TP-Model.st](https://github.com/GonzaloUlla/unlp-tyh-cuoora/blob/master/packages/CuOOra-TyH-TP-Model.st)
 * [CuOOra-TyH-TP-Test.st](https://github.com/GonzaloUlla/unlp-tyh-cuoora/blob/master/packages/CuOOra-TyH-TP-Test.st)
 
 ## Playgrounds
+
 * [Playground TP1](https://github.com/GonzaloUlla/unlp-tyh-cuoora/blob/master/playgrounds/playground-tp1.txt)
