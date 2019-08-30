@@ -9,7 +9,8 @@
 		"perfilUsuario",
 		"usuarioPerfil",
 		"loggedUser",
-		"preguntaViews"
+		"preguntaViews",
+		"cuooraSingleton"
 	],
 	"name" : "PerfilUsuarioView",
 	"type" : "normal"

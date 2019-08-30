@@ -7,7 +7,5 @@ renderBodyOn: html
 				do: [ :eachPreguntaView | 
 					html break.
 					html render: eachPreguntaView.
-					self renderConsultarPreguntaButtonOn: html preguntaView: eachPreguntaView.
-					html break.
-					self renderPerfilUsuarioButtonOn: html usuarioPerfil: eachPreguntaView pregunta usuario.
+					self renderPreguntaButtonsOn: html preguntaView: eachPreguntaView usuarioPerfil: eachPreguntaView pregunta usuario.
 					html break ] ]

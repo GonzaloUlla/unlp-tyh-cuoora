@@ -4,7 +4,7 @@ renderTopHeaderOn: html
 		tbsBreadcrumb: [ html
 				tbsBreadcrumbSection: [ html anchor
 						callback: [ self answer: loggedUser ];
-						with: [ html text: 'Home' ] ].
+						with: [ html text: 'Atrás' ] ].
 			html tbsBreadcrumbSection
 				beActive;
 				with: 'Perfil Usuario'.
