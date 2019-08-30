@@ -12,9 +12,8 @@ renderLoggedUserOn: html
 		ifNotNil: [ html div
 				class: 'pull-right';
 				with: [ html anchor
-						callback: [ "self call: perfilUsuarioView" ];
-						"TODO: #PerfilUsuario"
-							with: loggedUser nombre.
+						callback: [ self call: (PerfilUsuarioView usuarioPerfil: loggedUser loggedUser: loggedUser cuooraSingleton: cuooraSingleton) ];
+						with: loggedUser nombre.
 					html space: 5.
 					html anchor
 						callback: [ loggedUser := nil.

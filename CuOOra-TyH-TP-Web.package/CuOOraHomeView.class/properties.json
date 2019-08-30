@@ -9,7 +9,8 @@
 		"cuooraSingleton",
 		"loggedUser",
 		"agregarUsuarioView",
-		"preguntaViews"
+		"preguntaViews",
+		"perfilUsuarioView"
 	],
 	"name" : "CuOOraHomeView",
 	"type" : "normal"

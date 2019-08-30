@@ -6,13 +6,9 @@ renderContentOn: html
 				tbsPanelBody: [ html paragraph: pregunta texto.
 					html text: 'Tópicos:'.
 					html space.
-					pregunta conocerTópicosRelacionados
-						do: [ :eachTopic | 
-							html text: eachTopic nombre.
-							html space ].
+					pregunta conocerTópicosRelacionados do: [ :eachTopic | html text: eachTopic nombre , ', ' ].
 					html break.
-					html text: 'Realizada por: '.
-					html text: pregunta usuario nombre.
+					html text: 'Realizada por: ', pregunta usuario nombre.
 					html text: ' | Fecha: '.
 					html text: pregunta fechaCreación asStringYMDHM.
 					html break.

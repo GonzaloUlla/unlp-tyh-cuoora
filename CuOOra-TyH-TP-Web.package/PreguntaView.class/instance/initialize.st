@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	pregunta := Pregunta new
+	pregunta := Pregunta new.

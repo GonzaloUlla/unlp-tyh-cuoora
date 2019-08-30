@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "WAComponent",
+	"category" : "CuOOra-TyH-TP-Web",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"perfilUsuario",
+		"usuarioPerfil",
+		"loggedUser",
+		"preguntaViews",
+		"cuooraSingleton"
+	],
+	"name" : "PerfilUsuarioView",
+	"type" : "normal"
+}

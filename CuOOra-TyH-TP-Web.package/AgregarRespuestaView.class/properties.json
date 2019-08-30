@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "WAComponent",
+	"category" : "CuOOra-TyH-TP-Web",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"preguntaView",
+		"cuooraSingleton",
+		"loggedUser",
+		"respuesta",
+		"error",
+		"success"
+	],
+	"name" : "AgregarRespuestaView",
+	"type" : "normal"
+}

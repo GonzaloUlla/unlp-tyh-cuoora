@@ -5,7 +5,13 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "CreaciónExitosaView",
+	"instvars" : [
+		"cuooraSingleton",
+		"loggedUser",
+		"pregunta",
+		"error",
+		"success"
+	],
+	"name" : "AgregarPreguntaView",
 	"type" : "normal"
 }
