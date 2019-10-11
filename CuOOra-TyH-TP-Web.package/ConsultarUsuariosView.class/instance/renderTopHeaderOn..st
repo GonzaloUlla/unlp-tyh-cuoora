@@ -1,10 +1,11 @@
 rendering-header
-renderTopHeaderOn: html heading: aHeadingString
+renderTopHeaderOn: html
 	html
 		tbsBreadcrumb: [ html
 				tbsBreadcrumbSection: [ html anchor
-						callback: [ self answer: nil ];
+						callback: [ self answer: loggedUser ];
 						with: [ html text: 'Atrás' ] ].
 			html tbsBreadcrumbSection
 				beActive;
-				with: aHeadingString ]
+				with: 'Consultar usuarios'.
+			self renderLoggedUserOn: html ]
