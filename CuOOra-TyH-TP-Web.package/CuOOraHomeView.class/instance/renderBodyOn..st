@@ -1,6 +1,10 @@
 rendering
 renderBodyOn: html
-	loggedUser ifNotNil: [ html div with: [ self renderAgregarPreguntaButtonOn: html ] ].
+	loggedUser
+		ifNotNil: [ html
+				tbsForm: [ self renderAgregarPreguntaButtonOn: html.
+					html space.
+					self renderConsultarUsuariosButtonOn: html ] ].
 	html space.
 	preguntaViews
 		ifNotNil: [ preguntaViews
