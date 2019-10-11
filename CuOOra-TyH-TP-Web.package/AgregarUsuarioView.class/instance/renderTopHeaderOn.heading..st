@@ -4,7 +4,7 @@ renderTopHeaderOn: html heading: aHeadingString
 		tbsBreadcrumb: [ html
 				tbsBreadcrumbSection: [ html anchor
 						callback: [ self answer: nil ];
-						with: [ html text: 'Home' ] ].
+						with: [ html text: 'Atrás' ] ].
 			html tbsBreadcrumbSection
 				beActive;
 				with: aHeadingString ]

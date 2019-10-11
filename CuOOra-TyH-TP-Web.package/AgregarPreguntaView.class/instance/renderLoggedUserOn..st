@@ -9,5 +9,5 @@ renderLoggedUserOn: html
 					html space: 5.
 					html anchor
 						callback: [ loggedUser := nil.
-							self answer: loggedUser ];
+							self call: (AgregarUsuarioView cuooraSingleton: self cuooraSingleton) ];
 						with: 'Cerrar sesión' ] ]
