@@ -1,3 +1,6 @@
 api
 agregarRespuesta: unaRespuesta
-	respuestas add: unaRespuesta
+	(estado estaCreada | estado estaCerrada)
+		ifFalse: [respuestas add: unaRespuesta]
+
+	
