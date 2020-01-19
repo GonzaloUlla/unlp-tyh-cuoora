@@ -1,2 +1,3 @@
 as yet unclassified
-crear
+estaCerrada
+	^ true

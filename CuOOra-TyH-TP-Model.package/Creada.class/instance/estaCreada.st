@@ -1,2 +1,3 @@
 as yet unclassified
-activar
+estaCreada
+	^ true

@@ -1,6 +1,8 @@
 api
 agregarRespuesta: unaRespuesta
-	(estado estaCreada | estado estaCerrada)
-		ifFalse: [respuestas add: unaRespuesta]
-
-	
+	| retorno |
+	retorno := true.
+	self estaActiva
+		ifTrue: [ respuestas add: unaRespuesta ]
+		ifFalse: [ retorno := false ].
+	^ retorno

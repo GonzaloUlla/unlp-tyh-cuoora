@@ -6,4 +6,4 @@ initialize
 	título := ''.
 	tópicosRelacionados := OrderedCollection new.
 	respuestas := SortedCollection new.
-	estado := Creada pregunta: self
+	estado := Creada new.

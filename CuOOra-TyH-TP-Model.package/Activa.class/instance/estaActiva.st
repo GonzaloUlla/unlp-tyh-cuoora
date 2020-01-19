@@ -1,3 +1,3 @@
 as yet unclassified
-cerrar
-
+estaActiva
+	^ true
