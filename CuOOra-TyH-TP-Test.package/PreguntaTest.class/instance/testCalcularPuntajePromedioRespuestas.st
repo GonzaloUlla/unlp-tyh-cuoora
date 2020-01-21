@@ -20,6 +20,8 @@ testCalcularPuntajePromedioRespuestas
 		usuario: usuario3
 		texto: 'r3'
 		preguntaReferida: pregunta.
+	
+	pregunta activar.
 		
 	"Agrego respuesta1, respuesta2 y respuesta3 a pregunta"	
 	pregunta agregarRespuesta: respuesta1.
