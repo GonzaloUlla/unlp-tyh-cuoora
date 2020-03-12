@@ -1,3 +1,3 @@
-as yet unclassified
+api
 estaCerrada
 	^ self estado estaCerrada 

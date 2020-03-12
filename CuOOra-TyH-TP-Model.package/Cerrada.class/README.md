@@ -1,5 +1,4 @@
-Class part:  "Represento un Estado Cerrada  en CuOOra".
+Class part:  "Represento el estado Cerrada de una pregunta  en CuOOra".
 
-Responsibility part: "Lo que hago:  Permito cambiar el estado de la pregunta a Cerrada"
+Responsibility part: "Lo que hago:  Encapsulo el comportamiento de una pregunta que está Cerrada"
 
-Collaborators Part: "Pregunta"

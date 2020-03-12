@@ -1,5 +1,5 @@
-Class part:  "Represento un Estado Activa  en CuOOra".
+Class part:  "Represento el estado Activa de una pregunta  en CuOOra".
 
-Responsibility part: "Lo que hago:  Permito cambiar el estado de la pregunta a Activa"
+Responsibility part: "Lo que hago:  Encapsulo el comportamiento de una pregunta que está Activa"
 
-Collaborators Part: "Pregunta"
+

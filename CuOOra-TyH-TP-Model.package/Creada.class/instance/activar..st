@@ -1,3 +1,3 @@
-as yet unclassified
+api
 activar: unaPregunta
 	unaPregunta estado: Activa new
