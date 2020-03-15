@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "Julieta 3/11/2020 23:16",
+	"super" : "EstadoPregunta",
+	"category" : "CuOOra-TyH-TP-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "Cerrada",
+	"type" : "normal"
+}

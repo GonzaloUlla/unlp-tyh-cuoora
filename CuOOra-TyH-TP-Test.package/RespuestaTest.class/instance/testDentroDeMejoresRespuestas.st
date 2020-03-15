@@ -22,6 +22,7 @@ testDentroDeMejoresRespuestas
 	respuesta3 := Respuesta usuario: usuario3 texto: 'r3' preguntaReferida: pregunta1.
 
 	"Agrego respuesta, respuesta2 y respuesta3 a pregunta"
+	pregunta1 activar.
 	pregunta1 agregarRespuesta: respuesta.
 	pregunta1 agregarRespuesta: respuesta2.
 	pregunta1 agregarRespuesta: respuesta3.

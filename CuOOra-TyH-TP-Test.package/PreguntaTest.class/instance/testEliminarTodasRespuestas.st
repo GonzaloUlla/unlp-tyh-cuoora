@@ -19,6 +19,7 @@ testEliminarTodasRespuestas
 		preguntaReferida: pregunta.	
 	
 	"Agrego respuesta1 y respuesta2 a pregunta"
+	pregunta activar.
 	pregunta agregarRespuesta: respuesta1.
 	pregunta agregarRespuesta: respuesta2.
 	

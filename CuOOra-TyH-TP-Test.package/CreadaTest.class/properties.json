@@ -1,13 +1,13 @@
 {
-	"commentStamp" : "Julieta 3/12/2020 00:20",
+	"commentStamp" : "",
 	"super" : "TestCase",
 	"category" : "CuOOra-TyH-TP-Test",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"pregunta"
+		"estadoCreada"
 	],
-	"name" : "PreguntaTest",
+	"name" : "CreadaTest",
 	"type" : "normal"
 }

@@ -21,6 +21,7 @@ testEliminarPregunta
 	tópico agregarPregunta: pregunta.
 	respuesta := Respuesta usuario: usuario texto: 'r0' preguntaReferida: pregunta.
 	usuario agregarRespuesta: respuesta.
+	pregunta activar.
 	pregunta agregarRespuesta: respuesta.
 	"Inicialización de votos"
 	votoPregunta := Voto usuario: 'u1' entrada: pregunta.

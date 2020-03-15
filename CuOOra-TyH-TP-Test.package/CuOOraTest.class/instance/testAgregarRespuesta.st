@@ -19,4 +19,4 @@ testAgregarRespuesta
 	unaRespuesta usuario agregarRespuesta: unaRespuesta.
 	unaRespuesta preguntaReferida agregarRespuesta: unaRespuesta.
 	self assert: (usuario1 conocerRespuestas anySatisfy: [ :aRespuesta | aRespuesta = unaRespuesta ]).
-	self assert: (pregunta1 conocerRespuestas anySatisfy: [ :aRespuesta | aRespuesta = unaRespuesta ])
+	self deny: (pregunta1 conocerRespuestas anySatisfy: [ :aRespuesta | aRespuesta = unaRespuesta ])
