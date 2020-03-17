@@ -9,4 +9,5 @@ initialize
 	tópicosInterés := OrderedCollection new.
 	sigueA := OrderedCollection new.
 	preguntas := OrderedCollection new.
-	respuestas := OrderedCollection new
+	respuestas := OrderedCollection new.
+	estrategiaHomeActual := PersonalizarPorSocial new

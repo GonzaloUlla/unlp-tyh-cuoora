@@ -1,0 +1,3 @@
+api
+setHomeTópicos
+	self estrategiaHomeActual: PersonalizarPorTópicos new

@@ -14,7 +14,8 @@
 		"tópicosInterés",
 		"sigueA",
 		"preguntas",
-		"respuestas"
+		"respuestas",
+		"estrategiaHomeActual"
 	],
 	"name" : "Usuario",
 	"type" : "normal"

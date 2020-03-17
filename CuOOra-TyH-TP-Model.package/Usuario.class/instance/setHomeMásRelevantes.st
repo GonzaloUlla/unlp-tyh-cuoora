@@ -1,0 +1,3 @@
+api
+setHomeMásRelevantes
+	self estrategiaHomeActual: PersonalizarPorMásRelevantes new

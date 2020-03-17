@@ -1,0 +1,3 @@
+api
+setHomeSocial
+	self estrategiaHomeActual: PersonalizarPorSocial new

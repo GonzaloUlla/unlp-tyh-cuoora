@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "Julieta 3/17/2020 00:23",
+	"super" : "EstrategiaPersonalizarHome",
+	"category" : "CuOOra-TyH-TP-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PersonalizarPorSocial",
+	"type" : "normal"
+}
