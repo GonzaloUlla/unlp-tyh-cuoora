@@ -1,3 +1,3 @@
 api
 estaCreada
-	
+	self subclassResponsibility
