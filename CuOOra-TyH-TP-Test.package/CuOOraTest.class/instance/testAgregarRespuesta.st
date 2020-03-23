@@ -15,8 +15,8 @@ testAgregarRespuesta
 		fechaCreación: DateAndTime now
 		texto: 'Es de color verde'
 		preguntaReferida: pregunta1.
+	self should: [ cuoora agregarRespuesta: unaRespuesta ] raise: Error.
+	pregunta1 activar.
 	cuoora agregarRespuesta: unaRespuesta.
-	unaRespuesta usuario agregarRespuesta: unaRespuesta.
-	unaRespuesta preguntaReferida agregarRespuesta: unaRespuesta.
 	self assert: (usuario1 conocerRespuestas anySatisfy: [ :aRespuesta | aRespuesta = unaRespuesta ]).
-	self deny: (pregunta1 conocerRespuestas anySatisfy: [ :aRespuesta | aRespuesta = unaRespuesta ])
+	self assert: (pregunta1 conocerRespuestas anySatisfy: [ :aRespuesta | aRespuesta = unaRespuesta ])

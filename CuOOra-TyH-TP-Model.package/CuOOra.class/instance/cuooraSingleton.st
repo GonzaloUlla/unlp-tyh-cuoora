@@ -45,6 +45,8 @@ cuooraSingleton
 			usuario2 agregarPregunta: pregunta2.
 			tópico2 agregarPregunta: pregunta2.
 			"4- Crear y agregar respuestas"
+			pregunta1 activar.
+			pregunta2 activar.
 			respuesta1 := Respuesta
 				usuario: usuario1
 				fechaCreación: DateAndTime now
