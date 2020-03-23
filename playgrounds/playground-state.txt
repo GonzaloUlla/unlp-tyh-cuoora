@@ -1,0 +1,60 @@
+"PATRÓN STATE"
+cuoora := CuOOra new.
+
+"1- Crear un nuevo usuario"
+usuario1 := Usuario nombre: 'Julieta' contraseña: 'Julieta123' fechaCreación: (DateAndTime now).
+
+cuoora agregarUsuario: usuario1.
+
+"2- Agregar tópicos"
+tópico1 := Tópico nombre: 'Animales' descripción: 'Animales del mundo'.
+
+cuoora agregarTópico: tópico1.
+
+"3- Agregar preguntas"
+
+"pregunta1 por usuario1" 
+pregunta1 := Pregunta usuario: usuario1 fechaCreación: (DateAndTime now) título: 'Canguro' texto: '¿Cómo hace un canguro para mantener limpia su bolsa?' tópicoRelacionado: tópico1.
+
+usuario1 agregarPregunta: pregunta1.
+tópico1 agregarPregunta: pregunta1.
+
+pregunta1 estado.
+pregunta1 estaCreada.
+pregunta1 estaActiva.
+pregunta1 estaCerrada.
+ 
+"Desde el estado Creada sólo se puede pasar a Activa"
+pregunta1 cerrar.
+
+"4- Agregar respuestas"
+
+"respuesta1 por usuario1 a pregunta2"
+respuesta1 := Respuesta usuario: usuario1 fechaCreación: (DateAndTime now) texto: 'Es de color verde' preguntaReferida: pregunta1.
+usuario1 agregarRespuesta: respuesta1.
+
+"En estado Creada no se pueden agregar respuestas"
+pregunta1 crear.
+pregunta1 agregarRespuesta: respuesta1.
+pregunta1 conocerRespuestas.
+
+pregunta1 activar.
+pregunta1 agregarRespuesta: respuesta1.
+pregunta1 conocerRespuestas.
+
+"Si la pregunta tiene, al menos, una respuesta no puede volver al estado Creada" 
+pregunta1 crear.
+pregunta1 eliminarTodasRespuestas.
+pregunta1 crear. 
+pregunta1 conocerRespuestas. 
+
+pregunta1 activar.
+
+"Una vez cerrada la pregunta no puede volver a estados anteriores"
+pregunta1 cerrar. 
+pregunta1 activar.
+pregunta1 crear.
+
+"Una vez cerrada la pregunta no se pueden agregar más respuestas"
+pregunta1 agregarRespuesta: respuesta1.
+pregunta1 conocerRespuestas.
