@@ -1,3 +1,3 @@
-state tracking
-estaCerrada
+changing state
+activar
 	self subclassResponsibility

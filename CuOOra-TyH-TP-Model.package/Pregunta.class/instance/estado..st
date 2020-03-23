@@ -1,3 +1,3 @@
 accessing
-estado: anObject
-	estado := anObject
+estado: unEstado
+	estado := unEstado

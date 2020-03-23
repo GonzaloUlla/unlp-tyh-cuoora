@@ -1,5 +1,3 @@
 api
 agregarRespuesta: unaRespuesta
-	self estado
-		agregarRespuesta: unaRespuesta
-		a: self
+	self estado agregarRespuesta: unaRespuesta

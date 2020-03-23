@@ -1,4 +1,4 @@
-api
+changing state
 activar
-	self estado activar: self.
+	self estado activar.
 	^ estado
