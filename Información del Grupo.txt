@@ -1,0 +1,10 @@
+Información del Grupo
+
+Autores
+
+* Julieta Ríos (DNI: 39.448.440, julirios299@gmail.com)
+* Gonzalo Ulla (DNI: 39.079.547, gonzaulla@gmail.com)
+
+URL de la aplicación
+
+* http://localhost:8080/CuOOra
