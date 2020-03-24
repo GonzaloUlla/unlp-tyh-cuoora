@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "CuOOra-TyH-TP-Test",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"cuoora",
+		"estrategia"
+	],
+	"name" : "PersonalizarPorMásRelevantesTest",
+	"type" : "normal"
+}
