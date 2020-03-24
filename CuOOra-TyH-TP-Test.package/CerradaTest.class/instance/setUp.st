@@ -12,5 +12,7 @@ setUp
 		tópicoRelacionado: tópico1.
 	usuario1 agregarPregunta: pregunta1.
 	tópico1 agregarPregunta: pregunta1.
-	pregunta1 activar.
-	estadoActiva := pregunta1 estado
+	pregunta1
+		activar;
+		cerrar.
+	estadoCerrada := pregunta1 estado

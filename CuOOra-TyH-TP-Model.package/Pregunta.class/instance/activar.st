@@ -1,4 +1,3 @@
 changing state
 activar
-	self estado activar.
-	^ estado
+	^ self estado activar

@@ -1,4 +1,3 @@
 changing state
 cerrar
-	self estado cerrar.
-	^ estado
+	^ self estado cerrar

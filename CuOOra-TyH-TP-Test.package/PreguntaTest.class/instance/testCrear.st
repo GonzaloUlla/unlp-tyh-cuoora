@@ -1,4 +1,4 @@
 testing
 testCrear
-	self should: [ pregunta crear ] raise: Error.
-	self assert: pregunta estado estaCreada
+	self deny: pregunta crear.
+	self assert: pregunta estaCreada

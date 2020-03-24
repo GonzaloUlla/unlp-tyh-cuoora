@@ -1,3 +1,3 @@
 testing
 testEstaCreada
-	self assert: (pregunta estado isKindOf: Creada)
+	self assert: pregunta estaCreada
