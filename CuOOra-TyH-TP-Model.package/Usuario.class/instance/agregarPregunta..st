@@ -1,3 +1,3 @@
-api
+adding
 agregarPregunta: unaPregunta
 	preguntas add: unaPregunta
