@@ -1,0 +1,3 @@
+api
+conocerTópicosRelacionados
+	^ self subclassResponsibility

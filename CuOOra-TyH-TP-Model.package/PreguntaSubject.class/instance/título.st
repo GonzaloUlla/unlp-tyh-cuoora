@@ -1,0 +1,3 @@
+accessing
+título
+	^ self subclassResponsibility

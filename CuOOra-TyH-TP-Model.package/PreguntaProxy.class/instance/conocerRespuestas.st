@@ -1,0 +1,3 @@
+api
+conocerRespuestas
+	^ pregunta conocerRespuestas

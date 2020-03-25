@@ -1,16 +1,13 @@
 {
-	"commentStamp" : "GonzaloUlla 6/30/2019 16:55",
+	"commentStamp" : "GonzaloUlla 3/25/2020 02:27",
 	"super" : "PreguntaSubject",
 	"category" : "CuOOra-TyH-TP-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"título",
-		"tópicosRelacionados",
-		"respuestas",
-		"estado"
+		"pregunta"
 	],
-	"name" : "Pregunta",
+	"name" : "PreguntaProxy",
 	"type" : "normal"
 }
