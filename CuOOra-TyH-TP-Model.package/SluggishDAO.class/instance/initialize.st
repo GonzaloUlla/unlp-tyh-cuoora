@@ -1,4 +1,4 @@
 initialization
 initialize
-	super initialize.
-	elements := OrderedCollection new
+
+bag:= Dictionary new.

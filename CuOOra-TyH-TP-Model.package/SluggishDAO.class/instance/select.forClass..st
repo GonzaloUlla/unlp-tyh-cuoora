@@ -1,11 +1,11 @@
-selecting
-select: aBlock forClass: aClass
-	"Retorna elementos que satisfacen un bloque demorando 200ms por cada objeto de la colección"
+initialization
+select:aBlock forClass: aClass
+"retorna elementos que satisfacen un bloque demorando 200ms por cada objeto de la colección "
+| col  selection |
+col:=self initializeOrGetCollecitonFor: aClass.
 
-	| newCollection |
-	newCollection := Set new.
-	(self retrieveAllByClass: aClass)
-		do: [ :each | 
-			(aBlock value: each)
-				ifTrue: [ newCollection add: each ] ].
-	^ newCollection
+
+
+selection:=col select: aBlock.
+(Delay forMilliseconds: (200*selection size)) wait.
+^ selection

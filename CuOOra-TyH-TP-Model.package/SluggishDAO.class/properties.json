@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"elements"
+		"bag"
 	],
 	"name" : "SluggishDAO",
 	"type" : "normal"

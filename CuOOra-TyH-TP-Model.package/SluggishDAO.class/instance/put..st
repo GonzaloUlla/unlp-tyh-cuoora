@@ -1,5 +1,6 @@
-putting
-put: anObject
-	"Almacena un objeto en memoria"
-
-	^ elements add: anObject
+initialization
+put:anObject 
+"almacena un objeto en memoria"
+| col |
+col:= self initializeOrGetCollecitonFor: (anObject class).
+col add:anObject.
