@@ -1,6 +1,5 @@
 initialization
 initializeOrGetCollecitonFor: aClass
+	"inicialización lazy de las coleccion de un objeto"
 
-"inicialización lazy de las coleccion de un objeto"
-
-^bag at: aClass  ifAbsentPut: (OrderedCollection new).
+	^ bag at: aClass ifAbsentPut: OrderedCollection new
