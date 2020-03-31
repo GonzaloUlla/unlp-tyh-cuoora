@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "SluggishDAOTestCase",
+	"name" : "SlugglishDAOTestCase",
 	"type" : "normal"
 }
