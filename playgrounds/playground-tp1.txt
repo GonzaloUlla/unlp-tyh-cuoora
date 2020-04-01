@@ -66,7 +66,7 @@ usuario1 conocerPreguntasRelevantes.
 usuario2 conocerPreguntasRelevantes.
 
 "10- Obtener respuestas a una pregunta ordenadas por cantidad de likes"
-pregunta1 conocerRespuestasOrdenadas.
+pregunta1 conocerRespuestas.
 
 "10- Obtener respuestas a una pregunta ordenadas por cantidad de likes"
 "Agregamos otra respuesta para que pregunta1 tenga dos respuestas"
@@ -79,7 +79,7 @@ pregunta1 agregarRespuesta: respuesta3.
 voto3 := Voto usuario: usuario1 entrada: respuesta3  fechaCreación: (DateAndTime now).
 respuesta3 agregarVotoPositivo: voto3.  
 
-pregunta1 conocerRespuestasOrdenadas.
+pregunta1 conocerRespuestas.
 
 "11- Determinar si una respuesta está entre las mejores de una pregunta"
 "respuesta2 no está dentro de las mejores"
