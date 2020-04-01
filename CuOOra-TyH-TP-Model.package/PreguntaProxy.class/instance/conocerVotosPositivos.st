@@ -1,0 +1,3 @@
+api
+conocerVotosPositivos
+	^ pregunta conocerVotosPositivos

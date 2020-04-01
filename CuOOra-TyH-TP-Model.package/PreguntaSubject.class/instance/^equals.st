@@ -1,0 +1,3 @@
+comparing
+= otraPreguntaSubject
+	^ self subclassResponsibility

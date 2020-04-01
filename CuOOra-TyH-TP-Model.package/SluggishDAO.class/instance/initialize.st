@@ -1,3 +1,4 @@
 initialization
 initialize
-	bag := Dictionary new
+	bag := Dictionary new.
+	^ self

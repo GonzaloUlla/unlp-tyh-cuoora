@@ -9,7 +9,8 @@
 		"título",
 		"tópicosRelacionados",
 		"respuestas",
-		"estado"
+		"estado",
+		"respuestasSize"
 	],
 	"name" : "Pregunta",
 	"type" : "normal"

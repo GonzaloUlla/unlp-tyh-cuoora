@@ -42,7 +42,7 @@ cuooraSingleton
 
 			"4- Crear y agregar preguntas"
 			"Pregunta1: {U1, [T1, T3], 'yesterday noon'}"
-			pregunta1 := Pregunta
+			pregunta1 := PreguntaProxy
 				usuario: usuario1
 				fechaCreación: DateAndTime yesterday noon
 				título: 'Método setUp'
@@ -53,7 +53,7 @@ cuooraSingleton
 			tópico1 agregarPregunta: pregunta1.
 			tópico3 agregarPregunta: pregunta1.
 			"Pregunta2: {U2, [T1, T2], 'today noon'}"
-			pregunta2 := Pregunta
+			pregunta2 := PreguntaProxy
 				usuario: usuario2
 				fechaCreación: DateAndTime now noon
 				título: '#messageNotUnderstood'
@@ -64,7 +64,7 @@ cuooraSingleton
 			tópico1 agregarPregunta: pregunta2.
 			tópico2 agregarPregunta: pregunta2.
 			"Pregunta3: {U3, [T3], '20190729'}"
-			pregunta3 := Pregunta
+			pregunta3 := PreguntaProxy
 				usuario: usuario3
 				fechaCreación: (DateAndTime year: 2019 month: 7 day: 29)
 				título: '#subclassResponsibility'
@@ -73,7 +73,7 @@ cuooraSingleton
 			usuario3 agregarPregunta: pregunta3.
 			tópico3 agregarPregunta: pregunta3.
 			"Pregunta4: {U4, [T1], 'today midnight'}"
-			pregunta4 := Pregunta
+			pregunta4 := PreguntaProxy
 				usuario: usuario3
 				fechaCreación: DateAndTime midnight
 				título: 'Polimorfismo'
@@ -97,7 +97,8 @@ cuooraSingleton
 			respuesta2 := Respuesta
 				usuario: usuario2
 				fechaCreación: DateAndTime now
-				texto: 'Sirve para instanciar los objetos que son evaluados por el test en un único método y que se ejecute siempre antes de cada test'
+				texto:
+					'Sirve para instanciar los objetos que son evaluados por el test en un único método y que se ejecute siempre antes de cada test'
 				preguntaReferida: pregunta1.
 			usuario2 agregarRespuesta: respuesta2.
 			pregunta1 agregarRespuesta: respuesta2.

@@ -1,0 +1,3 @@
+api
+eliminarUsuario
+	^ pregunta eliminarUsuario

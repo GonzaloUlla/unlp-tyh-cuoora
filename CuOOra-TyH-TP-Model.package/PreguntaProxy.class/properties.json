@@ -6,7 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"pregunta"
+		"pregunta",
+		"sDAO",
+		"lastNWeeks",
+		"returnedSelectionSize"
 	],
 	"name" : "PreguntaProxy",
 	"type" : "normal"

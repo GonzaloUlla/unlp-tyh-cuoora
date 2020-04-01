@@ -12,4 +12,4 @@ usuario: unUsuario fechaCreación: unaFecha título: unTítulo texto: unTexto t�
 				título: unTítulo
 				texto: unTexto
 				tópicoRelacionado: unTópico).
-	^ nuevoProxy
+	^ nuevoProxy initializeProxy: nuevoProxy

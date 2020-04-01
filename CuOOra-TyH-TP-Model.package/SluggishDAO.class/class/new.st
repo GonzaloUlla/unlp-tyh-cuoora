@@ -1,3 +1,3 @@
 instance creation
 new
-	^ super new initialize
+	^ self error: 'Use #singleton or #newSingleton to get an instance of Class ' , self name

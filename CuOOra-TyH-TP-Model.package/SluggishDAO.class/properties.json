@@ -4,7 +4,9 @@
 	"category" : "CuOOra-TyH-TP-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"UniqueInstance"
+	],
 	"instvars" : [
 		"bag"
 	],

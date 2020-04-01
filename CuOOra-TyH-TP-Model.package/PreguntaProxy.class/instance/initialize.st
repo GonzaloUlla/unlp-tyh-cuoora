@@ -5,4 +5,7 @@ initialize
 		usuario: nil
 		título: ''
 		texto: ''
-		tópicoRelacionado: nil
+		tópicoRelacionado: nil.
+	sDAO := SluggishDAO singleton.
+	lastNWeeks := 1.
+	returnedSelectionSize := 0
