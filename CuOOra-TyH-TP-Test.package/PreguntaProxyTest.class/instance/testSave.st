@@ -32,4 +32,7 @@ testSave
 	self deny: (pregunta equals: pregunta3).
 	self assert: pregunta respuestasSize equals: 50.
 	self assert: pregunta2 respuestasSize equals: 50.
-	self assert: pregunta3 respuestasSize equals: 50
+	self assert: pregunta3 respuestasSize equals: 50.
+	pregunta texto: 'Nuevo texto para LA pregunta'.
+	self assert: pregunta equals: pregunta2.
+	self assert: pregunta equals: (sDAO select: [ :preg | preg equals: pregunta ] forClass: PreguntaProxy) first
