@@ -8,6 +8,6 @@
 	"instvars" : [
 		"sDAO"
 	],
-	"name" : "SlugglishDAOTestCase",
+	"name" : "SluggishDAOTestCase",
 	"type" : "normal"
 }
