@@ -2,6 +2,8 @@ testing
 testAgregarVotoNegativo
 	| voto1 voto2 voto3 voto4 |
 	"Crear Voto y Agregarlo"
+	self assert: entrada conocerVotosNegativos size equals: 0.
+	self assert: entrada votosNegativosSize equals: 0.
 	voto1 := Voto usuario: entrada usuario entrada: entrada.
 	voto2 := Voto usuario: 'otroUsuario' entrada: 'otraEntrada'.
 	voto3 := Voto usuario: 'otroUsuario3' entrada: 'otraEntrada3'.
@@ -10,6 +12,7 @@ testAgregarVotoNegativo
 	entrada agregarVotoNegativo: voto2.
 	entrada agregarVotoNegativo: voto4.
 	self assert: entrada conocerVotosNegativos size equals: 2.
+	self assert: entrada votosNegativosSize equals: 2.
 	self deny: (entrada conocerVotosNegativos includes: voto1).
 	self assert: (entrada conocerVotosNegativos includes: voto2).
 	self deny: (entrada conocerVotosNegativos includes: voto3).

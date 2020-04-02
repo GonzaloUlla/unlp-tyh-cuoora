@@ -1,15 +1,15 @@
 api
 conocerRespuestas
 	| selection auxCol |
-	selection := self selectRespuestasHaceSemanas: lastNWeeks.
-	returnedSelectionSize := returnedSelectionSize + selection size.
-	[ selection size < self sizeThreshold and: returnedSelectionSize < self respuestasSize ]
-		whileTrue: [ lastNWeeks := lastNWeeks + 1.
-			auxCol := self selectRespuestasHaceSemanas: lastNWeeks.
-			returnedSelectionSize := returnedSelectionSize + auxCol size.
+	selection := self selectRespuestasHaceSemanas: respuestasWeeks.
+	respuestasSelectionSize := respuestasSelectionSize + selection size.
+	[ selection size < self sizeThreshold and: respuestasSelectionSize < self respuestasSize ]
+		whileTrue: [ respuestasWeeks := respuestasWeeks + 1.
+			auxCol := self selectRespuestasHaceSemanas: respuestasWeeks.
+			respuestasSelectionSize := respuestasSelectionSize + auxCol size.
 			selection addAll: auxCol ].
-	returnedSelectionSize < self respuestasSize
-		ifTrue: [ lastNWeeks := lastNWeeks + 1 ]
-		ifFalse: [ returnedSelectionSize := 0.
-			lastNWeeks := 1 ].
+	respuestasSelectionSize < self respuestasSize
+		ifTrue: [ respuestasWeeks := respuestasWeeks + 1 ]
+		ifFalse: [ respuestasSelectionSize := 0.
+			respuestasWeeks := 1 ].
 	^ selection

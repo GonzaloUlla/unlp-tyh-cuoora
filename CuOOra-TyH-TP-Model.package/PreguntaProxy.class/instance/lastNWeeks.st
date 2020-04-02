@@ -1,3 +1,0 @@
-accessing
-lastNWeeks
-	^ lastNWeeks

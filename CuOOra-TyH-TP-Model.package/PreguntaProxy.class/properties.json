@@ -8,8 +8,12 @@
 	"instvars" : [
 		"pregunta",
 		"sDAO",
-		"lastNWeeks",
-		"returnedSelectionSize"
+		"respuestasWeeks",
+		"votosPositivosWeeks",
+		"votosNegativosWeeks",
+		"respuestasSelectionSize",
+		"votosPositivosSelectionSize",
+		"votosNegativosSelectionSize"
 	],
 	"name" : "PreguntaProxy",
 	"type" : "normal"

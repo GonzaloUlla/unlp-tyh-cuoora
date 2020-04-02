@@ -2,4 +2,5 @@ initialization
 initialize
 	"Inicialización de un Voto"
 
-	fechaCreación := DateAndTime now
+	fechaCreación := DateAndTime now.
+	esPositivo := false

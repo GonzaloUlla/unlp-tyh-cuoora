@@ -1,3 +1,4 @@
 api
 agregarVotoPositivo: unVoto
-	^ pregunta agregarVotoPositivo: unVoto
+	sDAO put: unVoto.
+	^ self pregunta agregarVotoPositivo: unVoto

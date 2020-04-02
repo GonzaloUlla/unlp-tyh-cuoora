@@ -7,5 +7,9 @@ initialize
 		texto: ''
 		tópicoRelacionado: nil.
 	sDAO := SluggishDAO singleton.
-	lastNWeeks := 1.
-	returnedSelectionSize := 0
+	respuestasWeeks := 1.
+	votosNegativosWeeks := 1.
+	votosPositivosWeeks := 1.
+	respuestasSelectionSize := 0.
+	votosNegativosSelectionSize := 0.
+	votosPositivosSelectionSize := 0
