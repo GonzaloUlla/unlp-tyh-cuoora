@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Visitor",
+	"category" : "CuOOra-TyH-TP-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JsonVisitor",
+	"type" : "normal"
+}
