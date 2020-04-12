@@ -1,4 +1,3 @@
-api
+changing state
 crear
-	self estado crear: self.
-	^ estado
+	^ self estado crear

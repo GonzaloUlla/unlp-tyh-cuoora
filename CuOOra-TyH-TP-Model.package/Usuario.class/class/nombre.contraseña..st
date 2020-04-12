@@ -7,4 +7,5 @@ nombre: unNombre contraseña: unaContraseña
 	nuevoUsuario nombre: unNombre.
 	nuevoUsuario contraseña: unaContraseña.
 	nuevoUsuario fechaCreación: DateAndTime now.
+	nuevoUsuario estrategiaHomeActual: (PersonalizarPorSocial usuario: nuevoUsuario).
 	^ nuevoUsuario

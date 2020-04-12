@@ -1,0 +1,3 @@
+accessing
+pregunta
+	^ self subclassResponsibility

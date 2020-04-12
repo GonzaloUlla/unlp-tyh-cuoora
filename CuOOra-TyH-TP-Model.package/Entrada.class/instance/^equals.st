@@ -1,0 +1,3 @@
+comparing
+= otraEntrada
+	^ self subclassResponsibility

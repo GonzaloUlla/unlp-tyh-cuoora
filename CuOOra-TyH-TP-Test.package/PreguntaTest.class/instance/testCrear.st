@@ -1,5 +1,4 @@
 testing
 testCrear
-	pregunta crear.
-	self assert: (pregunta estado isKindOf: Creada)
-	
+	self deny: pregunta crear.
+	self assert: pregunta estaCreada

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "CuOOra-TyH-TP-Test",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"cuoora",
+		"estrategia",
+		"sDAO"
+	],
+	"name" : "PersonalizarPorSocialTest",
+	"type" : "normal"
+}

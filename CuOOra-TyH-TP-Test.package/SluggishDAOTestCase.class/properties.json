@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "GonzaloUlla 3/26/2020 02:07",
+	"super" : "TestCase",
+	"category" : "CuOOra-TyH-TP-Test",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"sDAO"
+	],
+	"name" : "SluggishDAOTestCase",
+	"type" : "normal"
+}

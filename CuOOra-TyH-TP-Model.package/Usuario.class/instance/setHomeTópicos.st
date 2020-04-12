@@ -1,0 +1,3 @@
+setting
+setHomeTópicos
+	self estrategiaHomeActual: PersonalizarPorTópicos new

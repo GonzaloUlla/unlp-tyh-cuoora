@@ -10,7 +10,9 @@
 		"fechaCreación",
 		"texto",
 		"votosPositivos",
-		"votosNegativos"
+		"votosNegativos",
+		"votosPositivosSize",
+		"votosNegativosSize"
 	],
 	"name" : "Entrada",
 	"type" : "normal"

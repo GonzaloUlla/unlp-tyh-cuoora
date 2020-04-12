@@ -1,3 +1,3 @@
-api
+state tracking
 estaCreada
-	
+	self subclassResponsibility

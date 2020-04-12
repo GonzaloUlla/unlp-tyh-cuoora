@@ -1,3 +1,3 @@
 api
 conocerRespuestas
-	^ respuestas
+	^ respuestas copy

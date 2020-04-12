@@ -1,0 +1,91 @@
+"PATRÓN STRATEGY"
+"Creamos el objeto cuoora"
+cuoora := CuOOra new.
+
+"1- Crear un nuevo usuario"
+usuario1 := Usuario nombre: 'Julieta' contraseña: 'Julieta123' fechaCreación: (DateAndTime now).
+usuario2 := Usuario nombre: 'Gonzalo' contraseña: 'Gonzalo123' fechaCreación: (DateAndTime now).
+usuario3 := Usuario nombre: 'Sergio' contraseña: 'Sergio123' fechaCreación: (DateAndTime now).
+
+cuoora agregarUsuario: usuario1.
+cuoora agregarUsuario: usuario2.
+cuoora agregarUsuario: usuario3.
+
+"2- Agregar tópicos"
+tópico1 := Tópico nombre: 'Animales' descripción: 'Animales del mundo'.
+tópico2 := Tópico nombre: 'Colores' descripción: 'Colores de objetos, animales, elementos'.
+tópico3 := Tópico nombre: 'Comida' descripción: 'Comidas del mundo'.
+
+cuoora agregarTópico: tópico1.
+cuoora agregarTópico: tópico2.
+cuoora agregarTópico: tópico3.
+
+"3- Agregar preguntas"
+
+"pregunta1 por usuario1" 
+pregunta1 := Pregunta usuario: usuario1 fechaCreación: (DateAndTime now) título: 'Canguro' texto: '¿Cómo hace un canguro para mantener limpia su bolsa?' tópicoRelacionado: tópico1.
+
+usuario1 agregarPregunta: pregunta1.
+tópico1 agregarPregunta: pregunta1.
+
+"pregunta2 por usuario2" 
+pregunta2 := Pregunta usuario: usuario2 fechaCreación: ('2020-03-13T20:44:30.19435-03:00') título: 'Color lagarto' texto: '¿De qué color es el lagarto?' tópicoRelacionado: tópico2. 
+
+usuario2 agregarPregunta: pregunta2.
+tópico2 agregarPregunta: pregunta2.
+
+"pregunta3 por usuario3"
+pregunta3 := Pregunta usuario: usuario3 fechaCreación: ('2020-03-14T20:44:30.19435-03:00') título: 'Color pez' texto: '¿De qué color es el pez?' tópicoRelacionado: tópico2. 
+
+usuario3 agregarPregunta: pregunta3.
+tópico2 agregarPregunta: pregunta3.
+
+"pregunta4 por usuario2"
+pregunta4 := Pregunta usuario: usuario2 fechaCreación: ('2020-03-12T20:44:30.19435-03:00') título: 'Comida perro' texto: '¿Qué comen los perros?' tópicoRelacionado: tópico3. 
+
+usuario2 agregarPregunta: pregunta4.
+tópico3 agregarPregunta: pregunta4.
+
+"pregunta5 por usuario3"
+pregunta5 := Pregunta usuario: usuario3 fechaCreación: (DateAndTime now) título: 'Comida gato' texto: '¿Qué comen los gatos?' tópicoRelacionado: tópico3. 
+
+usuario3 agregarPregunta: pregunta5.
+tópico3 agregarPregunta: pregunta5.
+
+"4- Agregar respuestas"
+
+"respuesta1 por usuario2 a pregunta1"
+respuesta1 := Respuesta usuario: usuario2 fechaCreación: (DateAndTime now) texto: 'Lame el interior de la bolsa' preguntaReferida: pregunta1.
+usuario2 agregarRespuesta: respuesta1.
+pregunta1 activar.
+pregunta1 agregarRespuesta: respuesta1.
+
+"5- Agregar un usuario como follower de otro"
+"usuario1 como follower de usuario2"
+usuario1 seguirA: usuario2. 		
+usuario1 seguirA: usuario3.
+	
+"6- Registrar Like a pregunta"
+"voto1 por usuario3 a pregunta2"
+voto1 := Voto usuario: usuario3 entrada: pregunta2 fechaCreación: (DateAndTime now).
+pregunta2 agregarVotoPositivo: voto1.
+
+"6- Registrar Dislike a pregunta"
+"voto2 por usuario1 a pregunta4" 
+voto2 := Voto usuario: usuario1 entrada: pregunta4 fechaCreación: (DateAndTime now).
+pregunta4 agregarVotoNegativo: voto2.
+
+"7- Registrar tópico de interés a usuario"
+usuario1 agregarTópicoInterés: tópico1. 
+usuario1 agregarTópicoInterés: tópico2.
+
+"Por defecto, personaliza el home por Social. Retorna preguntas de la última semana, realizadas por usuario seguidos por el usuario1, ordenadas por cantidad de votos"
+usuario1 personalizarHome: cuoora.
+
+"Personaliza el home por Tópicos. Retorna preguntas de la última semana, realizadas para los tópicos de interés del usuario, ordenadas por fecha de creación"
+usuario1 setHomeTópicos. 
+usuario1 personalizarHome: cuoora.
+
+"Personaliza el home por Más Relevantes. Retorna las preguntas del día, ordenadas de manera descendente por cantidad de respuestas"
+usuario1 setHomeMásRelevantes. 
+usuario1 personalizarHome: cuoora.

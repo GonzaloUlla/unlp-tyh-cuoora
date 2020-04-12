@@ -1,5 +1,5 @@
 testing
 testEstaActiva
-	self deny: (pregunta estado isKindOf: Activa).
-	pregunta activar.
+	self deny: pregunta estaActiva.
+	self assert: pregunta activar.
 	self assert: pregunta estaActiva

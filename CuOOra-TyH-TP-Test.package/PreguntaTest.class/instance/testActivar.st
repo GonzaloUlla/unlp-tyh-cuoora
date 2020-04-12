@@ -1,6 +1,6 @@
 testing
 testActivar
-	pregunta activar.
-	self deny: (pregunta estado isKindOf: Cerrada).
-	self assert: (pregunta estado isKindOf: Activa) 
-	
+	self assert: pregunta activar.
+	self deny: pregunta estaCreada.
+	self deny: pregunta estaCerrada.
+	self assert: pregunta estaActiva

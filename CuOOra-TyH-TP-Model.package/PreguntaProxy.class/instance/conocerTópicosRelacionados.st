@@ -1,0 +1,3 @@
+api
+conocerTópicosRelacionados
+	^ pregunta conocerTópicosRelacionados

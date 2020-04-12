@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "GonzaloUlla 6/30/2019 16:55",
-	"super" : "Entrada",
+	"super" : "PreguntaSubject",
 	"category" : "CuOOra-TyH-TP-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -9,7 +9,8 @@
 		"título",
 		"tópicosRelacionados",
 		"respuestas",
-		"estado"
+		"estado",
+		"respuestasSize"
 	],
 	"name" : "Pregunta",
 	"type" : "normal"

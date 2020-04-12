@@ -1,4 +1,3 @@
-api
+changing state
 cerrar
-	self estado cerrar: self.
-	^ estado
+	^ self estado cerrar
