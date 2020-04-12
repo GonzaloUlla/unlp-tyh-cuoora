@@ -1,0 +1,3 @@
+accessing
+respuestasSize
+	^ self subclassResponsibility

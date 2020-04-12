@@ -1,0 +1,3 @@
+accessing
+votosPositivosSize
+	^ self subclassResponsibility

@@ -1,0 +1,3 @@
+api
+calcularPuntaje
+	^ pregunta calcularPuntaje

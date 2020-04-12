@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "GonzaloUlla 3/25/2020 02:18",
+	"super" : "Entrada",
+	"category" : "CuOOra-TyH-TP-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PreguntaSubject",
+	"type" : "normal"
+}

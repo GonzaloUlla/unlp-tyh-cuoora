@@ -8,5 +8,5 @@ usuario: unUsuario título: unTítulo texto: unTexto tópicoRelacionado: unTópi
 	nuevaPregunta fechaCreación: DateAndTime now.
 	nuevaPregunta título: unTítulo.
 	nuevaPregunta texto: unTexto.
-	nuevaPregunta agregarTópicoRelacionado: unTópico.	
+	nuevaPregunta agregarTópicoRelacionado: unTópico.
 	^ nuevaPregunta

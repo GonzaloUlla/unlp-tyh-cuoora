@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "GonzaloUlla 3/25/2020 02:27",
+	"super" : "PreguntaSubject",
+	"category" : "CuOOra-TyH-TP-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"pregunta",
+		"sDAO",
+		"respuestasWeeks",
+		"votosPositivosWeeks",
+		"votosNegativosWeeks",
+		"respuestasSelectionSize",
+		"votosPositivosSelectionSize",
+		"votosNegativosSelectionSize"
+	],
+	"name" : "PreguntaProxy",
+	"type" : "normal"
+}

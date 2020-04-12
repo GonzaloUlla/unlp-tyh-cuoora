@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"cuoora",
-		"estrategia"
+		"estrategia",
+		"sDAO"
 	],
 	"name" : "PersonalizarPorSocialTest",
 	"type" : "normal"

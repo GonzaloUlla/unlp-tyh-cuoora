@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "TestCase",
+	"category" : "CuOOra-TyH-TP-Test",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"cuooraSingleton",
+		"pregunta",
+		"sDAO"
+	],
+	"name" : "PreguntaProxyTest",
+	"type" : "normal"
+}
