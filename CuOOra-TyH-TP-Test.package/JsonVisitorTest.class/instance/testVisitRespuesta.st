@@ -1,6 +1,6 @@
 tests
 testVisitRespuesta
-	| writer usuario1 pregunta1 respuesta1 |
+	| usuario1 pregunta1 respuesta1 |
 	usuario1 := Usuario new.
 	pregunta1 := Pregunta new.
 	respuesta1 := Respuesta
@@ -8,11 +8,7 @@ testVisitRespuesta
 		fechaCreación: DateAndTime now
 		texto: 'Es de color verde'
 		preguntaReferida: pregunta1.
-	writer := [ :object | 
-	String
-		streamContents: [ :stream | 
-			(NeoJSONWriter on: stream)
-				for: Respuesta do: [ :mapping | mapping mapInstVar: #texto ];
-				nextPut: object ] ].
-	self assert: (writer value: Respuesta new) equals: '{}'.
-	self assert: (writer value: respuesta1) equals: '{"texto":"Es de color verde"}'
+	self assert: (visitor visitRespuesta: Respuesta new) equals: '{ }'.
+	self
+		assert: (visitor visitRespuesta: respuesta1)
+		equals: '{' , String cr , String tab , '"texto" : "Es de color verde"' , String cr , '}'
