@@ -1,6 +1,10 @@
 api
 exportarPreguntasJson
-	| json |
+	| json totalPreguntas índice |
+	totalPreguntas := 0.
+	índice := 1.
+	self conocerUsuarios
+		do: [ :usuario | totalPreguntas := totalPreguntas + usuario conocerPreguntas size ].
 	json := String new writeStream.
 	json nextPutAll: '{"Preguntas":['.
 	self conocerUsuarios
@@ -8,7 +12,9 @@ exportarPreguntasJson
 			usuario conocerPreguntas
 				do: [ :pregunta | 
 					json nextPutAll: (pregunta accept: jsonVisitor).
-					json nextPutAll: ',' ] ].
+					índice < totalPreguntas
+						ifTrue: [ json nextPutAll: ',' ].
+					índice := índice + 1 ] ].
 	json
 		cr;
 		nextPutAll: ']}'.
