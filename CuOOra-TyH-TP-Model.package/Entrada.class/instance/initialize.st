@@ -4,7 +4,7 @@ initialize
 	super initialize.
 
 	fechaCreación := DateAndTime now.
-	texto := ''.
-	usuario := ''.
+	texto := nil.
+	usuario := nil.
 	votosNegativos := OrderedCollection new.
 	votosPositivos := OrderedCollection new.

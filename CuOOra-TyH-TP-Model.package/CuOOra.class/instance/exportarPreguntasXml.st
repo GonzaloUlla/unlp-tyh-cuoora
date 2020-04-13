@@ -1,16 +1,12 @@
 api
 exportarPreguntasXml
-	| preguntas xml |
-	xml := XMLWriter new.
-	preguntas := OrderedCollection new.
+	| xml |
+	xml := String new writeStream.
+	xml nextPutAll: '<preguntas>'.
 	self conocerUsuarios
 		do:
-			[ :usuario | usuario conocerPreguntas do: [ :pregunta | preguntas add: (pregunta accept: xmlVisitor) ] ].
-	xml := String
-		streamContents: [ :aStream | 
-			(xml on: aStream)
-				xml;
-				enablePrettyPrinting;
-				isEscaping: false;
-				tag: 'Preguntas' with: preguntas ].
+			[ :usuario | usuario conocerPreguntas do: [ :pregunta | xml nextPutAll: (pregunta accept: xmlVisitor) ] ].
+	xml
+		cr;
+		nextPutAll: '</preguntas>'.
 	^ xml
