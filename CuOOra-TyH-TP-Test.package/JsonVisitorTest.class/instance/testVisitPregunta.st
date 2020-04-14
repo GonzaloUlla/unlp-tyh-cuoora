@@ -3,7 +3,7 @@ testVisitPregunta
 	| usuario1 tópico1 pregunta1 respuesta1 |
 	usuario1 := Usuario new.
 	tópico1 := Tópico new.
-	pregunta1 := Pregunta
+	pregunta1 := PreguntaProxy
 		usuario: usuario1
 		fechaCreación: DateAndTime now
 		título: 'Color lagarto'
@@ -16,14 +16,14 @@ testVisitPregunta
 		preguntaReferida: pregunta1.
 	pregunta1 activar.
 	self
-		assert: (visitor visitPregunta: pregunta1)
+		assert: (pregunta1 accept: visitor)
 		equals:
 			'{' , String cr , String tab , '"título" : "Color lagarto",' , String cr , String tab
 				, '"texto" : "¿De qué color es el lagarto?",' , String cr , String tab
 				, '"respuestas" : [ ]' , String cr , '}'.
 	pregunta1 agregarRespuesta: respuesta1.
 	self
-		assert: (visitor visitPregunta: pregunta1)
+		assert: (pregunta1 accept: visitor)
 		equals:
 			'{' , String cr , String tab , '"título" : "Color lagarto",' , String cr , String tab
 				, '"texto" : "¿De qué color es el lagarto?",' , String cr , String tab

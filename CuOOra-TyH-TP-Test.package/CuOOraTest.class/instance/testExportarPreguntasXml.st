@@ -3,7 +3,7 @@ testExportarPreguntasXml
 	| usuario1 tópico1 pregunta1 respuesta1 |
 	usuario1 := Usuario new.
 	tópico1 := Tópico new.
-	pregunta1 := Pregunta
+	pregunta1 := PreguntaProxy
 		usuario: usuario1
 		fechaCreación: DateAndTime now
 		título: 'Color lagarto'

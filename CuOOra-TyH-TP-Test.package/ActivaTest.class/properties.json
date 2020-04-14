@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"estadoActiva"
+		"estadoActiva",
+		"sDAO"
 	],
 	"name" : "ActivaTest",
 	"type" : "normal"

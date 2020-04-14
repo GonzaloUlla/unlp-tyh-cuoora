@@ -1,3 +1,4 @@
 running
 setUp
-	visitor := XmlVisitor new
+	visitor := XmlVisitor new.
+	sDAO := SluggishDAO newSingleton

@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"estadoCerrada"
+		"estadoCerrada",
+		"sDAO"
 	],
 	"name" : "CerradaTest",
 	"type" : "normal"

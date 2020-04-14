@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"visitor"
+		"visitor",
+		"sDAO"
 	],
 	"name" : "XmlVisitorTest",
 	"type" : "normal"
