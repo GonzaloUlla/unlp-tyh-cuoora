@@ -1,0 +1,58 @@
+"Creamos el objeto cuoora"
+cuoora := CuOOra new.
+
+"1- Creamos nuevos usuarios" 
+usuario1 := Usuario nombre: 'Julieta' contraseña: 'Julieta123' fechaCreación: (DateAndTime now).
+usuario2 := Usuario nombre: 'Gonzalo' contraseña: 'Gonzalo123' fechaCreación: (DateAndTime now).
+
+cuoora agregarUsuario: usuario1.
+cuoora agregarUsuario: usuario2.
+
+"2- Agregamos tópicos"
+tópico1 := Tópico nombre: 'Animales' descripción: 'Animales del mundo'.
+tópico2 := Tópico nombre: 'Colores' descripción: 'Colores de objetos, animales, elementos'.
+
+cuoora agregarTópico: tópico1.
+cuoora agregarTópico: tópico2.
+
+"3- Agregamos preguntas:
+  pregunta1 por usuario1
+  pregunta2 por usuario2
+  pregunta3 por usuario2"
+pregunta1 := Pregunta usuario: usuario1 fechaCreación: (DateAndTime now) título: 'Canguro' texto: '¿Cómo hace un canguro para mantener limpia su bolsa?' tópicoRelacionado: tópico1.
+usuario1 agregarPregunta: pregunta1.
+tópico1 agregarPregunta: pregunta1.
+ 
+pregunta2 := Pregunta usuario: usuario2 fechaCreación: (DateAndTime now) título: 'Color lagarto' texto: '¿De qué color es el lagarto?' tópicoRelacionado: tópico2. 
+usuario2 agregarPregunta: pregunta2.
+tópico2 agregarPregunta: pregunta2.
+
+pregunta3 := Pregunta usuario: usuario2 fechaCreación: (DateAndTime now) título: 'Perro' texto: '¿Existe la raza caniche?' tópicoRelacionado: tópico1. 
+usuario2 agregarPregunta: pregunta3.
+tópico1 agregarPregunta: pregunta3.
+ 
+"4- Agregamos respuestas:
+  respuesta1 por usuario 1 a pregunta2
+  respuesta2 por usuario2 a pregunta1
+  respuesta3 por usuario1 a pregunta2"
+respuesta1 := Respuesta usuario: usuario1 fechaCreación: (DateAndTime now) texto: 'Es de color verde' preguntaReferida: pregunta2.
+usuario1 agregarRespuesta: respuesta1.
+pregunta2 activar.
+pregunta2 agregarRespuesta: respuesta1.
+
+respuesta2 := Respuesta usuario: usuario2 fechaCreación: (DateAndTime now) texto: 'Lame el interior de la bolsa' preguntaReferida: pregunta1.
+usuario2 agregarRespuesta: respuesta2.
+pregunta1 activar.
+pregunta1 agregarRespuesta: respuesta2.
+
+respuesta3 := Respuesta usuario: usuario1 fechaCreación: (DateAndTime now) texto: 'Es de color marrón' preguntaReferida: pregunta2.
+usuario1 agregarRespuesta: respuesta3.
+pregunta2 activar.
+pregunta2 agregarRespuesta: respuesta3.
+
+pregunta1 conocerRespuestas.
+pregunta2 conocerRespuestas.
+pregunta3 conocerRespuestas.
+
+cuoora exportarPreguntasJson.
+cuoora exportarPreguntasXml.

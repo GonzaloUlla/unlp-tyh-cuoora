@@ -3,8 +3,8 @@ initialize
 	"Inicialización de un Usuario"
 
 	super initialize.
-	nombre := ''.
-	contraseña := ''.
+	nombre := nil.
+	contraseña := nil.
 	fechaCreación := DateAndTime now.
 	tópicosInterés := OrderedCollection new.
 	sigueA := OrderedCollection new.
