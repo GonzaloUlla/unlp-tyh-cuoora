@@ -1,21 +1,12 @@
 api
 exportarPreguntasJson
-	| json totalPreguntas índice |
-	totalPreguntas := 0.
-	índice := 1.
-	self conocerUsuarios
-		do: [ :usuario | totalPreguntas := totalPreguntas + usuario conocerPreguntas size ].
-	json := String new writeStream.
-	json nextPutAll: '{"Preguntas":['.
+	| preguntas json |
+	preguntas := OrderedCollection new.
 	self conocerUsuarios
 		do: [ :usuario | 
 			usuario conocerPreguntas
-				do: [ :pregunta | 
-					json nextPutAll: (pregunta accept: jsonVisitor).
-					índice < totalPreguntas
-						ifTrue: [ json nextPutAll: ',' ].
-					índice := índice + 1 ] ].
-	json
-		cr;
-		nextPutAll: ']}'.
+				do: [ :pregunta | preguntas add: (pregunta accept: jsonVisitor) ] ].
+	json := String
+		streamContents:
+			[ :aStream | (NeoJSONWriter on: aStream) encodeKey: 'Preguntas' value: preguntas ].
 	^ json

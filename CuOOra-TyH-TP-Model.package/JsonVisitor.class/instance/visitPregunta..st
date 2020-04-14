@@ -4,7 +4,6 @@ visitPregunta: unaPregunta
 	jsonPregunta := String
 		streamContents: [ :aStream | 
 			(NeoJSONWriter on: aStream)
-				prettyPrint: true;
 				for: Pregunta do: [ :mapping | mapping mapInstVars: #(título texto respuestas) ];
 				for: Respuesta do: [ :mapping | mapping mapInstVar: #texto ];
 				for: unaPregunta conocerRespuestas
