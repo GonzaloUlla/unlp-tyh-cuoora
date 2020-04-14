@@ -8,7 +8,11 @@ testVisitRespuesta
 		fechaCreación: DateAndTime now
 		texto: 'Es de color verde'
 		preguntaReferida: pregunta1.
-	self assert: (visitor visitRespuesta: Respuesta new) equals: '{ }'.
+	self
+		assert: (visitor visitRespuesta: Respuesta new)
+		equals: '<respuesta>' , String cr , '    <texto/>' , String cr , '</respuesta>'.
 	self
 		assert: (visitor visitRespuesta: respuesta1)
-		equals: '{' , String cr , String tab , '"texto" : "Es de color verde"' , String cr , '}'
+		equals:
+			'<respuesta>' , String cr , '    <texto>Es de color verde</texto>' , String cr
+				, '</respuesta>'

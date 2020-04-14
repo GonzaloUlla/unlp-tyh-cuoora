@@ -1,3 +1,3 @@
-initialization
+running
 setUp
 	visitor := JsonVisitor new

@@ -12,5 +12,5 @@ exportarPreguntasXml
 				xml;
 				enablePrettyPrinting;
 				isEscaping: false;
-				tag: 'Preguntas' with: preguntas ].
+				tag: 'preguntas' with: preguntas ].
 	^ xml
