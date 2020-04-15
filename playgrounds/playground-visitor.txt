@@ -1,3 +1,4 @@
+"PATRÓN VISITOR"
 "Creamos el objeto cuoora"
 cuoora := CuOOra new.
 

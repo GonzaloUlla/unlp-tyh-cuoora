@@ -29,19 +29,19 @@ usuario1 agregarPregunta: pregunta1.
 tópico1 agregarPregunta: pregunta1.
 
 "pregunta2 por usuario2" 
-pregunta2 := Pregunta usuario: usuario2 fechaCreación: ('2020-03-13T20:44:30.19435-03:00') título: 'Color lagarto' texto: '¿De qué color es el lagarto?' tópicoRelacionado: tópico2. 
+pregunta2 := Pregunta usuario: usuario2 fechaCreación: (DateAndTime now - 4 day) título: 'Color lagarto' texto: '¿De qué color es el lagarto?' tópicoRelacionado: tópico2. 
 
 usuario2 agregarPregunta: pregunta2.
 tópico2 agregarPregunta: pregunta2.
 
 "pregunta3 por usuario3"
-pregunta3 := Pregunta usuario: usuario3 fechaCreación: ('2020-03-14T20:44:30.19435-03:00') título: 'Color pez' texto: '¿De qué color es el pez?' tópicoRelacionado: tópico2. 
+pregunta3 := Pregunta usuario: usuario3 fechaCreación: (DateAndTime now - 3 day) título: 'Color pez' texto: '¿De qué color es el pez?' tópicoRelacionado: tópico2. 
 
 usuario3 agregarPregunta: pregunta3.
 tópico2 agregarPregunta: pregunta3.
 
 "pregunta4 por usuario2"
-pregunta4 := Pregunta usuario: usuario2 fechaCreación: ('2020-03-12T20:44:30.19435-03:00') título: 'Comida perro' texto: '¿Qué comen los perros?' tópicoRelacionado: tópico3. 
+pregunta4 := Pregunta usuario: usuario2 fechaCreación: (DateAndTime now - 2 day) título: 'Comida perro' texto: '¿Qué comen los perros?' tópicoRelacionado: tópico3. 
 
 usuario2 agregarPregunta: pregunta4.
 tópico3 agregarPregunta: pregunta4.
@@ -76,8 +76,8 @@ voto2 := Voto usuario: usuario1 entrada: pregunta4 fechaCreación: (DateAndTime 
 pregunta4 agregarVotoNegativo: voto2.
 
 "7- Registrar tópico de interés a usuario"
-usuario1 agregarTópicoInterés: tópico1. 
-usuario1 agregarTópicoInterés: tópico2.
+usuario1 agregarTópicoInterés: tópico2. 
+usuario1 agregarTópicoInterés: tópico3.
 
 "Por defecto, personaliza el home por Social. Retorna preguntas de la última semana, realizadas por usuario seguidos por el usuario1, ordenadas por cantidad de votos"
 usuario1 personalizarHome: cuoora.

@@ -34,6 +34,7 @@ respuesta1 := Respuesta usuario: usuario1 fechaCreación: (DateAndTime now) text
 usuario1 agregarRespuesta: respuesta1.
 
 "En estado Creada no se pueden agregar respuestas"
+pregunta1 estaCreada.
 pregunta1 crear.
 pregunta1 agregarRespuesta: respuesta1.
 pregunta1 conocerRespuestas.
