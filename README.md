@@ -40,6 +40,7 @@
 * [Playground State](https://github.com/GonzaloUlla/unlp-tyh-cuoora/blob/master/playgrounds/playground-state.txt)
 * [Playground Strategy](https://github.com/GonzaloUlla/unlp-tyh-cuoora/blob/master/playgrounds/playground-strategy.txt)
 * [Playground Visitor](https://github.com/GonzaloUlla/unlp-tyh-cuoora/blob/master/playgrounds/playground-visitor.txt)
+* [Playground Proxy](https://github.com/GonzaloUlla/unlp-tyh-cuoora/blob/master/playgrounds/playground-proxy.txt)
 
 ## Diagrama de Clases UML Original TyH
 
