@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "Julieta 4/12/2020 21:39",
+	"super" : "TestCase",
+	"category" : "CuOOra-TyH-TP-Test",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"visitor"
+	],
+	"name" : "JsonVisitorTest",
+	"type" : "normal"
+}

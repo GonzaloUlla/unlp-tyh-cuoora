@@ -3,6 +3,6 @@ initialize
 	"Inicialización de un Tópico"
 
 	super initialize.
-	nombre := ''.
-	descripción := ''.
+	nombre := nil.
+	descripción := nil.
 	preguntas := OrderedCollection new

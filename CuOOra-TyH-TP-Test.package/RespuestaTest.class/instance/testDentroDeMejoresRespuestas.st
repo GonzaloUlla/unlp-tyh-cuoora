@@ -11,7 +11,7 @@ testDentroDeMejoresRespuestas
 	usuario3 := Usuario nombre: 'u3' contraseña: 'u3'.
 
 	"Inicializo pregunta1"
-	pregunta1 := Pregunta
+	pregunta1 := PreguntaProxy
 		usuario: usuario1
 		título: 'p1'
 		texto: 'p1'

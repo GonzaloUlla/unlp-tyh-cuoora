@@ -8,7 +8,7 @@ setUp
 		usuario: usuario
 		texto: 'r0'
 		preguntaReferida:
-			(Pregunta
+			(PreguntaProxy
 				usuario: usuario
 				título: 'p0'
 				texto: 'p0'

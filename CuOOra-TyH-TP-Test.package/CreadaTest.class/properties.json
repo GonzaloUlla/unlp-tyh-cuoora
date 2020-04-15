@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"estadoCreada"
+		"estadoCreada",
+		"sDAO"
 	],
 	"name" : "CreadaTest",
 	"type" : "normal"

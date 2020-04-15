@@ -6,7 +6,7 @@ testEquals
 		usuario: otroUsuario
 		texto: 'r1'
 		preguntaReferida:
-			(Pregunta
+			(PreguntaProxy
 				usuario: otroUsuario
 				título: 'p1'
 				texto: 'p1'

@@ -1,3 +1,3 @@
 setting
 setHomeMásRelevantes
-	self estrategiaHomeActual: PersonalizarPorMásRelevantes new
+	self estrategiaHomeActual: (PersonalizarPorMásRelevantes usuario: self)

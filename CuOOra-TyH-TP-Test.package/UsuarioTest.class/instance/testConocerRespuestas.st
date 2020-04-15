@@ -4,7 +4,7 @@ testConocerRespuestas
 	"initialization"
 	otroUsuario := Usuario nombre: 'otro usuario' contraseña: 'asd'.
 	tópico1 := Tópico nombre: 't1' descripción: 't1'.
-	pregunta1 := Pregunta
+	pregunta1 := PreguntaProxy
 		usuario: otroUsuario
 		título: 'p1'
 		texto: 'p1'

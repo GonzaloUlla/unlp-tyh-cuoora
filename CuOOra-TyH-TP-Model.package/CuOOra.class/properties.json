@@ -8,7 +8,9 @@
 	"instvars" : [
 		"usuarios",
 		"tópicos",
-		"cuooraSingleton"
+		"cuooraSingleton",
+		"jsonVisitor",
+		"xmlVisitor"
 	],
 	"name" : "CuOOra",
 	"type" : "normal"
