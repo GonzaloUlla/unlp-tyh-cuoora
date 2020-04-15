@@ -1,3 +1,3 @@
 setting
 setHomeTópicos
-	self estrategiaHomeActual: PersonalizarPorTópicos new
+	self estrategiaHomeActual: (PersonalizarPorTópicos usuario: self)

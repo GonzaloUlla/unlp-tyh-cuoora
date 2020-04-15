@@ -10,4 +10,4 @@ initialize
 	sigueA := OrderedCollection new.
 	preguntas := OrderedCollection new.
 	respuestas := OrderedCollection new.
-	estrategiaHomeActual := PersonalizarPorSocial new
+	estrategiaHomeActual := PersonalizarPorSocial usuario: self

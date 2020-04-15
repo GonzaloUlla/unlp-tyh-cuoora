@@ -1,6 +1,6 @@
 accessing
 usuario: unUsuario
-	"Constructor de EstadoPregunta"
+	"Constructor de EstrategiaPersonalizarHome"
 
 	| nuevaEstrategia |
 	nuevaEstrategia := self new.

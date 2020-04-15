@@ -1,3 +1,3 @@
 setting
 setHomeSocial
-	self estrategiaHomeActual: PersonalizarPorSocial new
+	self estrategiaHomeActual: (PersonalizarPorSocial usuario: self)
