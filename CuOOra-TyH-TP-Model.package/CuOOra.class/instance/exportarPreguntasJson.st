@@ -16,6 +16,5 @@ exportarPreguntasJson
 						ifTrue: [ json nextPutAll: ',' ].
 					índice := índice + 1 ] ].
 	json
-		cr;
 		nextPutAll: ']}'.
 	^ json contents

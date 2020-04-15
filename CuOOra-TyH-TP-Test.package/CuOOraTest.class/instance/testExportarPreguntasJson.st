@@ -25,13 +25,4 @@ testExportarPreguntasJson
 	self
 		assert: cuoora exportarPreguntasJson
 		equals:
-			'{"preguntas":[{' , String cr , String tab , '"título" : "Color lagarto",' , String cr
-				, String tab , '"texto" : "¿De qué color es el lagarto?",' , String cr , String tab
-				, '"respuestas" : [{' , String cr , String tab , String tab , String tab
-				, '"texto" : "Es de color verde"' , String cr , String tab , String tab , '}'
-				, String cr , String tab , ']' , String cr , '},{' , String cr , String tab
-				, '"título" : "Color lagarto",' , String cr , String tab
-				, '"texto" : "¿De qué color es el lagarto?",' , String cr , String tab
-				, '"respuestas" : [{' , String cr , String tab , String tab , String tab
-				, '"texto" : "Es de color verde"' , String cr , String tab , String tab , '}'
-				, String cr , String tab , ']' , String cr , '}' , String cr , ']}'
+			'{"preguntas":[{"título":"Color lagarto","texto":"¿De qué color es el lagarto?","respuestas":[{"texto":"Es de color verde"}]},{"título":"Color lagarto","texto":"¿De qué color es el lagarto?","respuestas":[{"texto":"Es de color verde"}]}]}'

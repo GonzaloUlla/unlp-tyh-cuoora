@@ -17,16 +17,9 @@ testVisitPregunta
 	pregunta1 activar.
 	self
 		assert: (pregunta1 accept: visitor)
-		equals:
-			'{' , String cr , String tab , '"título" : "Color lagarto",' , String cr , String tab
-				, '"texto" : "¿De qué color es el lagarto?",' , String cr , String tab
-				, '"respuestas" : [ ]' , String cr , '}'.
+		equals: '{"título":"Color lagarto","texto":"¿De qué color es el lagarto?","respuestas":[]}'.
 	pregunta1 agregarRespuesta: respuesta1.
 	self
 		assert: (pregunta1 accept: visitor)
 		equals:
-			'{' , String cr , String tab , '"título" : "Color lagarto",' , String cr , String tab
-				, '"texto" : "¿De qué color es el lagarto?",' , String cr , String tab
-				, '"respuestas" : [{' , String cr , String tab , String tab , String tab
-				, '"texto" : "Es de color verde"' , String cr , String tab , String tab , '}'
-				, String cr , String tab , ']' , String cr , '}'
+			'{"título":"Color lagarto","texto":"¿De qué color es el lagarto?","respuestas":[{"texto":"Es de color verde"}]}'
