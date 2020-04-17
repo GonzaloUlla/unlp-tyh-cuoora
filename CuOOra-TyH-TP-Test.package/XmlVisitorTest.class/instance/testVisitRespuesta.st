@@ -2,7 +2,7 @@ testing
 testVisitRespuesta
 	| usuario1 pregunta1 respuesta1 |
 	usuario1 := Usuario new.
-	pregunta1 := PreguntaProxy new.
+	pregunta1 := Pregunta new.
 	respuesta1 := Respuesta
 		usuario: usuario1
 		fechaCreación: DateAndTime now

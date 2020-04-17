@@ -42,7 +42,7 @@ cuooraSingleton
 
 			"4- Crear y agregar preguntas"
 			"Pregunta1: {U1, [T1, T3], 'yesterday noon'}"
-			pregunta1 := PreguntaProxy
+			pregunta1 := Pregunta
 				usuario: usuario1
 				fechaCreación: DateAndTime yesterday noon
 				título: 'Método setUp'
@@ -53,7 +53,7 @@ cuooraSingleton
 			tópico1 agregarPregunta: pregunta1.
 			tópico3 agregarPregunta: pregunta1.
 			"Pregunta2: {U2, [T1, T2], 'today noon'}"
-			pregunta2 := PreguntaProxy
+			pregunta2 := Pregunta
 				usuario: usuario2
 				fechaCreación: DateAndTime now noon
 				título: '#messageNotUnderstood'
@@ -64,7 +64,7 @@ cuooraSingleton
 			tópico1 agregarPregunta: pregunta2.
 			tópico2 agregarPregunta: pregunta2.
 			"Pregunta3: {U3, [T3], '20190729'}"
-			pregunta3 := PreguntaProxy
+			pregunta3 := Pregunta
 				usuario: usuario3
 				fechaCreación: (DateAndTime year: 2019 month: 7 day: 29)
 				título: '#subclassResponsibility'
@@ -73,7 +73,7 @@ cuooraSingleton
 			usuario3 agregarPregunta: pregunta3.
 			tópico3 agregarPregunta: pregunta3.
 			"Pregunta4: {U4, [T1], 'today midnight'}"
-			pregunta4 := PreguntaProxy
+			pregunta4 := Pregunta
 				usuario: usuario3
 				fechaCreación: DateAndTime midnight
 				título: 'Polimorfismo'

@@ -3,7 +3,7 @@ testAgregarPregunta
 	| usuario1 pregunta1 tópico1 |
 	usuario1 := Usuario nombre: 'Julieta' contraseña: 'Julieta123' fechaCreación: DateAndTime now.
 	tópico1 := Tópico nombre: 'Animales' descripción: 'Animales del mundo'.
-	pregunta1 := PreguntaProxy
+	pregunta1 := Pregunta
 		usuario: usuario1
 		fechaCreación: DateAndTime now
 		título: 'Canguro'

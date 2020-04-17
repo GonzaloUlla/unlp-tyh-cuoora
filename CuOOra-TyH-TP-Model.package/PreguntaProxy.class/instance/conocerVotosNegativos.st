@@ -1,8 +1,9 @@
 api
 conocerVotosNegativos
 	| selection auxCol |
+	pregunta ifNil: [ self initializePregunta ].
 	selection := self selectVotosNegativosHaceSemanas: votosNegativosWeeks.
-	votosNegativosSelectionSize  := votosNegativosSelectionSize + selection size.
+	votosNegativosSelectionSize := votosNegativosSelectionSize + selection size.
 	[ selection size < self sizeThreshold and: votosNegativosSelectionSize < self votosNegativosSize ]
 		whileTrue: [ votosNegativosWeeks := votosNegativosWeeks + 1.
 			auxCol := self selectVotosNegativosHaceSemanas: votosNegativosWeeks.

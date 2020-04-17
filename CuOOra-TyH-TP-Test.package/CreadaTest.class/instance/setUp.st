@@ -4,7 +4,7 @@ setUp
 	"Inicializo usuario1, tópico1 y pregunta1"
 	usuario1 := Usuario nombre: 'Gonzalo' contraseña: 'Gonzalo123'.
 	tópico1 := Tópico nombre: 'Reptiles' descripción: 'Animales reptiles'.
-	pregunta := PreguntaProxy
+	pregunta := Pregunta
 		usuario: usuario1
 		fechaCreación: DateAndTime now
 		título: 'Color Serpiente'

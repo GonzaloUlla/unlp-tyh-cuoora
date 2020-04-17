@@ -1,3 +1,3 @@
 comparing
 = otraPreguntaProxy
-	^ self pregunta = otraPreguntaProxy pregunta
+	^ id = otraPreguntaProxy id

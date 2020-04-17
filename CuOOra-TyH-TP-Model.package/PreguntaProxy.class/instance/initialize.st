@@ -1,11 +1,7 @@
 initialization
 initialize
 	super initialize.
-	pregunta := Pregunta
-		usuario: nil
-		título: ''
-		texto: ''
-		tópicoRelacionado: nil.
+	pregunta := nil.
 	sDAO := SluggishDAO singleton.
 	respuestasWeeks := 1.
 	votosNegativosWeeks := 1.

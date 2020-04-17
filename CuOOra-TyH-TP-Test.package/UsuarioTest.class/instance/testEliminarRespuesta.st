@@ -3,7 +3,7 @@ testEliminarRespuesta
 	| pregunta1 respuesta1 tópico1 |
 	"initialization"
 	tópico1 := Tópico nombre: 't1' descripción: 't1'.
-	pregunta1 := PreguntaProxy
+	pregunta1 := Pregunta
 		usuario: usuario
 		fechaCreación: DateAndTime now
 		título: 'p1'

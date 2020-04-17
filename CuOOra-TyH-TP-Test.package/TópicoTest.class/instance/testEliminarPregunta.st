@@ -3,19 +3,19 @@ testEliminarPregunta
 	| pregunta1 pregunta2 pregunta3 usuario |
 	"initialization"
 	usuario := Usuario nombre: 'u1' contraseña: 'u1'.
-	pregunta1 := PreguntaProxy
+	pregunta1 := Pregunta
 		usuario: usuario
 		fechaCreación: DateAndTime now
 		título: 'p1'
 		texto: 'p1'
 		tópicoRelacionado: tópico.	"eliminada"
-	pregunta2 := PreguntaProxy
+	pregunta2 := Pregunta
 		usuario: usuario
 		fechaCreación: DateAndTime now
 		título: 'p2'
 		texto: 'p2'
 		tópicoRelacionado: tópico.	"agregada"
-	pregunta3 := PreguntaProxy
+	pregunta3 := Pregunta
 		usuario: (Usuario nombre: 'otro' contraseña: 'otro')
 		título: 'p3'
 		texto: 'p3'
