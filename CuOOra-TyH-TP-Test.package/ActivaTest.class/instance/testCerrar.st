@@ -1,5 +1,5 @@
 testing
 testCerrar
-	self assert: estadoActiva pregunta estaActiva.
-	self assert: estadoActiva pregunta cerrar.
-	self assert: estadoActiva pregunta estaCerrada
+	self assert: pregunta estaActiva.
+	self assert: pregunta cerrar.
+	self assert: pregunta estaCerrada
