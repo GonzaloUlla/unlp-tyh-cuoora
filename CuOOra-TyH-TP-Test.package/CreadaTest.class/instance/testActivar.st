@@ -1,5 +1,5 @@
 testing
 testActivar
-	self deny: estadoCreada pregunta estaActiva.
-	estadoCreada pregunta activar.
-	self assert: estadoCreada pregunta estaActiva
+	self deny: pregunta estaActiva.
+	pregunta activar.
+	self assert: pregunta estaActiva

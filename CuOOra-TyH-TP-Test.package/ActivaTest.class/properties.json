@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"estadoActiva",
+		"pregunta",
 		"sDAO"
 	],
 	"name" : "ActivaTest",

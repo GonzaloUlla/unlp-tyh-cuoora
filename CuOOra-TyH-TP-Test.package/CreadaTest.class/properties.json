@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"estadoCreada",
+		"pregunta",
 		"sDAO"
 	],
 	"name" : "CreadaTest",
