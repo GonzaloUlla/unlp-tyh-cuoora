@@ -2,7 +2,7 @@ testing
 testConocerPreguntas
 	| pregunta1 usuario1 |
 	usuario1 := Usuario nombre: 'Julieta' contraseña: 'Julieta123'.
-	pregunta1 := PreguntaProxy
+	pregunta1 := Pregunta
 		usuario: usuario1
 		título: 'Color serpiente'
 		texto: '¿De qué color es la serpiente?'

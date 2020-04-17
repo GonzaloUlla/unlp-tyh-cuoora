@@ -11,22 +11,22 @@ testConocerPreguntasRelevantes
 	usuario seguirA: usuarioSeguido.
 
 	"initialization - preguntas"
-	pregunta1 := PreguntaProxy
+	pregunta1 := Pregunta
 		usuario: usuarioSeguido
 		título: 'p1'
 		texto: 'p1'
 		tópicoRelacionado: tópico1.	"usuarioSeguido, tópico de interés, debe estar 1 vez"
-	pregunta2 := PreguntaProxy
+	pregunta2 := Pregunta
 		usuario: usuarioNoSeguido
 		título: 'p2'
 		texto: 'p2'
 		tópicoRelacionado: tópico2.	"usuarioNoSeguido, NO tópico de interés, NO debe estar"
-	pregunta3 := PreguntaProxy
+	pregunta3 := Pregunta
 		usuario: usuarioNoSeguido
 		título: 'p3'
 		texto: 'p3'
 		tópicoRelacionado: tópico1.	"usuarioNoSeguido, tópico de interés, debe estar 1 vez"
-	pregunta4 := PreguntaProxy
+	pregunta4 := Pregunta
 		usuario: usuarioSeguido
 		título: 'p4'
 		texto: 'p4'

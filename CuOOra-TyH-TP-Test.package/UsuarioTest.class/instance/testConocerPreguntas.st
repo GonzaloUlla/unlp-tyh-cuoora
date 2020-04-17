@@ -3,7 +3,7 @@ testConocerPreguntas
 	| pregunta1 tópico1 |
 	"initialization"
 	tópico1 := Tópico nombre: 'Reptiles' descripción: 'Animales reptiles'.
-	pregunta1 := PreguntaProxy
+	pregunta1 := Pregunta
 		usuario: usuario
 		fechaCreación: DateAndTime now
 		título: 'Color serpiente'
