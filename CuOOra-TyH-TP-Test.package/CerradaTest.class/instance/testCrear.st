@@ -1,5 +1,5 @@
 testing
 testCrear
-	self assert: estadoCerrada pregunta estaCerrada.
-	self deny: estadoCerrada pregunta crear.
-	self assert: estadoCerrada pregunta estaCerrada
+	self assert: pregunta estaCerrada.
+	self deny: pregunta crear.
+	self assert: pregunta estaCerrada
