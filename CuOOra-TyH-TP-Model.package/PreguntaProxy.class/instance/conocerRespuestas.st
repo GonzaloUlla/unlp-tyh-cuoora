@@ -1,6 +1,7 @@
 api
 conocerRespuestas
 	| selection auxCol |
+	pregunta ifNil: [ self initializePregunta ].
 	selection := self selectRespuestasHaceSemanas: respuestasWeeks.
 	respuestasSelectionSize := respuestasSelectionSize + selection size.
 	[ selection size < self sizeThreshold and: respuestasSelectionSize < self respuestasSize ]

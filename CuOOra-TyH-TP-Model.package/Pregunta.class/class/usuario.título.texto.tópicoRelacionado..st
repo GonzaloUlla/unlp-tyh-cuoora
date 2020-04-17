@@ -9,4 +9,5 @@ usuario: unUsuario título: unTítulo texto: unTexto tópicoRelacionado: unTópi
 	nuevaPregunta título: unTítulo.
 	nuevaPregunta texto: unTexto.
 	nuevaPregunta agregarTópicoRelacionado: unTópico.
+	nuevaPregunta id: ((unUsuario hash bitXor: unTítulo hash) bitXor: unTexto hash).
 	^ nuevaPregunta

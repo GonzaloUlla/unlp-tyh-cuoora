@@ -1,24 +1,25 @@
 testing
 testSelectRespuestasHaceSemanas
 	| rta |
-	self assert: (sDAO retrieveAllByClass: pregunta class) size equals: 5.
-	self assert: (pregunta selectRespuestasHaceSemanas: 0) isEmpty.
-	self assert: (pregunta selectRespuestasHaceSemanas: 1) isEmpty.
-	self assert: (pregunta selectRespuestasHaceSemanas: 999) isEmpty.
-	pregunta activar.
-	rta := self crearRespuestaA: pregunta haceSemanas: 0.
-	pregunta agregarRespuesta: rta.
-	self assert: (pregunta selectRespuestasHaceSemanas: 0) isEmpty.
-	self assert: (pregunta selectRespuestasHaceSemanas: 1) size equals: 1.
-	self assert: (pregunta selectRespuestasHaceSemanas: 1.0) size equals: 1.
-	self assert: (pregunta selectRespuestasHaceSemanas: 2) isEmpty.
-	rta := self crearRespuestaA: pregunta haceSemanas: 1.
-	pregunta agregarRespuesta: rta.
-	self assert: (pregunta selectRespuestasHaceSemanas: 0) isEmpty.
-	self assert: (pregunta selectRespuestasHaceSemanas: 1) size equals: 1.
-	self assert: (pregunta selectRespuestasHaceSemanas: 2) size equals: 1.
-	rta := self crearRespuestaA: pregunta haceSemanas: 0.
-	pregunta agregarRespuesta: rta.
-	rta := self crearRespuestaA: pregunta haceSemanas: 0.
-	pregunta agregarRespuesta: rta.
-	self assert: (pregunta selectRespuestasHaceSemanas: 1) size equals: 3
+	self assert: (sDAO retrieveAllByClass: Pregunta) size equals: 4.
+	self assert: (proxy selectRespuestasHaceSemanas: 0) isEmpty.
+	self assert: (proxy selectRespuestasHaceSemanas: 1) size equals: 2.
+	self assert: (proxy selectRespuestasHaceSemanas: 2) isEmpty.
+	self assert: (proxy selectRespuestasHaceSemanas: 999) isEmpty.
+	proxy activar.
+	rta := self crearRespuestaA: proxy haceSemanas: 0.
+	proxy agregarRespuesta: rta.
+	self assert: (proxy selectRespuestasHaceSemanas: 0) isEmpty.
+	self assert: (proxy selectRespuestasHaceSemanas: 1) size equals: 3.
+	self assert: (proxy selectRespuestasHaceSemanas: 1.0) size equals: 3.
+	self assert: (proxy selectRespuestasHaceSemanas: 2) isEmpty.
+	rta := self crearRespuestaA: proxy haceSemanas: 1.
+	proxy agregarRespuesta: rta.
+	self assert: (proxy selectRespuestasHaceSemanas: 0) isEmpty.
+	self assert: (proxy selectRespuestasHaceSemanas: 1) size equals: 3.
+	self assert: (proxy selectRespuestasHaceSemanas: 2) size equals: 1.
+	rta := self crearRespuestaA: proxy haceSemanas: 0.
+	proxy agregarRespuesta: rta.
+	rta := self crearRespuestaA: proxy haceSemanas: 0.
+	proxy agregarRespuesta: rta.
+	self assert: (proxy selectRespuestasHaceSemanas: 1) size equals: 5

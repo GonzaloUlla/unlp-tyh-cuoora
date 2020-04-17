@@ -1,7 +1,7 @@
 testing
-testEquals
+testHash
 	| otroProxy |
 	otroProxy := proxy copy.
-	self assert: proxy equals: otroProxy.
+	self assert: proxy hash = otroProxy hash.
 	otroProxy título: 'Otro texto diferente al anterior'.
-	self deny: (proxy equals: otroProxy)
+	self deny: (proxy hash = otroProxy hash)

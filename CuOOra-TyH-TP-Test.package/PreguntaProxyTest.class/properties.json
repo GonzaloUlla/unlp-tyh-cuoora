@@ -7,8 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"cuooraSingleton",
-		"pregunta",
-		"sDAO"
+		"sDAO",
+		"proxy"
 	],
 	"name" : "PreguntaProxyTest",
 	"type" : "normal"
