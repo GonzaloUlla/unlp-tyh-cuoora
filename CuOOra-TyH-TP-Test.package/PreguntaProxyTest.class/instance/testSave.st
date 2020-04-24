@@ -14,7 +14,7 @@ testSave
 	pregunta3 := proxy copy.
 	pregunta4 := proxy copy.
 	pregunta3 título: 'Otro título diferente del anterior'.
-	pregunta4 texto: 'Otro texto diferente del anterior'.
+	pregunta4 título: 'Otro título2 diferente del anterior'.
 	self assert: proxy equals: pregunta2.
 	self deny: (proxy equals: pregunta3).
 	self deny: (proxy equals: pregunta4).
@@ -25,6 +25,5 @@ testSave
 	self assert: proxy respuestasSize equals: 52.
 	self assert: pregunta2 respuestasSize equals: 52.
 	self assert: pregunta3 respuestasSize equals: 52.
-	proxy texto: 'Nuevo texto para LA pregunta'.
 	self assert: proxy equals: pregunta2.
-	self assert: proxy equals: (sDAO select: [ :preg | preg equals: proxy ] forClass: Pregunta) first
+	self assert: proxy pregunta equals: (sDAO select: [ :preg | preg equals: proxy pregunta ] forClass: Pregunta) first
